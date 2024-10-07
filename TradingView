@@ -6,9 +6,9 @@
 没开通试用的情况下请勿点击恢复购买
 [rewrite_local]
 #未开通试用
-https://cn.tradingview.com/api/v1/user/profile/me/ url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/TradingView.js
+https://cn.tradingview.com/api/v1/user/profile/me/ url script-response-body https://raw.githubusercontent.com/why-is-important/Egern/refs/heads/main/TradingView
 #开通试用或者会员未到期
-https://cn.tradingview.com/order/apple/receipt/ url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/TradingView.js
+https://cn.tradingview.com/order/apple/receipt/ url script-response-body https://raw.githubusercontent.com/why-is-important/Egern/refs/heads/main/TradingView
 
 [mitm]
 hostname = cn.tradingview.com
@@ -60,24 +60,4 @@ $done({ body, url });
 
 
 }
-/*
-     FILE ARCHIVED ON 07:16:05 Dec 20, 2023 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 12:16:45 Oct 07, 2024.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 0.484
-  exclusion.robots: 0.019
-  exclusion.robots.policy: 0.008
-  esindex: 0.01
-  cdx.remote: 7.049
-  LoadShardBlock: 125.806 (3)
-  PetaboxLoader3.datanode: 108.141 (5)
-  PetaboxLoader3.resolve: 148.248 (2)
-  load_resource: 149.175
-  loaddict: 20.812
-*/
