@@ -17,7 +17,7 @@ http-response ^https?:\/\/firstclass\.tripsy\.app\/api\/v\d\/receipt\/update  re
 http-request ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
 http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)  requires-body=1, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
 #llsyd
-http-response ^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$ script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/llsyd.js
+http-response ^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$ requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/llsyd.js
 #eTicket
 http-request ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Revenuecat/chepiaopiao.js
 http-response ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) requires-body=1,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Revenuecat/chepiaopiao.js
