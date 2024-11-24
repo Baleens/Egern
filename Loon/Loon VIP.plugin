@@ -1,0 +1,35 @@
+#!name= loon VIP plugins
+#!date= 2024/11/24
+#!list= JD-Price\Alpenglow\Documents\MoneyWiz\Tripsy\Currency\llsyd\eTicket\ELSA\DailyArt\baimiao\Bloomberg
+#!tag= VIP
+
+[Script]
+#JD-Price
+http-response ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) requires-body=1,script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
+#Alpenglow    
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32}) requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/AlpenglowProCrack.js
+#Documents    
+http-request ^https?:\/\/license\.pdfexpert\.com\/api\/2.0\/documents\/subscription\/refresh requires-body=1,script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Documents.js
+#MoneyWiz
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js
+#Tripsy
+http-response ^https?:\/\/firstclass\.tripsy\.app\/api\/v\d\/receipt\/update  requires-body=1,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Tripsy.js
+#Currency
+http-request ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
+http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)  requires-body=1, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
+#llsyd
+http-response ^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$ requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/llsyd.js
+#eTicket
+http-request ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Revenuecat/chepiaopiao.js
+http-response ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) requires-body=1,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Revenuecat/chepiaopiao.js
+#ELSA
+http-response ^https?:\/\/pool\.elsanow\.io\/(user\/api\/v\d\/purchase|entitlement\/api\/v\d\/user\/entitlements)  requires-body=1,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/elsa.js
+#DailyArt
+http-response ^https?:\/\/api\.getdailyart\.com\/api\/(subscription\/verified|auth\/login|check-logged) requires-body=1,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/DailyArt.js
+#baimiao
+http-response ^https?:\/\/baimiao\.uzero\.cn\/api\/.+\/(appLaunchWithUser|getAnnouncement|checkLoginClient) requires-body=1,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/baimiao.js
+#Bloomberg
+http-response ^https:\/\/mobapi\.bloomberg\.com\/wssmobile\/v1\/user\/subscription requires-body=1,script-path=https://raw.githubusercontent.com/leey668/pyer/main/bloomberg.js
+
+[MITM]
+hostname = api.m.jd.com,*.pdfexpert.com,firstclass.tripsy.app,vira.llsapp.com,api.revenuecat.com,pool.elsanow.io,api.getdailyart.com,baimiao.uzero.cn,mobapi.bloomberg.com
