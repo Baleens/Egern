@@ -5,14 +5,21 @@
 #!tag= VIP
 
 [Host]
-# liulishuo
+# > liulishuo
 log.trackingio.com = server:https://223.5.5.5/dns-query
 *.llscdn.com = server:https://223.5.5.5/dns-query
 *.llsapp.com = server:https://223.5.5.5/dns-query
 *.llsserver.com = server:https://223.5.5.5/dns-query
 *.liulishuo.com = server:https://223.5.5.5/dns-query
-# cn domain
+# > cn domain
 *.cn = server:https://223.5.5.5/dns-query
+# > Apple
+# refer: https://support.apple.com/zh-cn/HT210060
+networking.apple = server:https://doh.dns.apple.com/dns-query
+# Apple.com
+# *.apple.com = server:https://doh.dns.apple.com/dns-query
+# iCloud.com
+*.icloud.com = server:https://doh.dns.apple.com/dns-query
 
 [Script]
 #Alpenglow    
