@@ -1,18 +1,8 @@
-#Egern Scripts
-#Time=2024/11/24
-#list:
-  #JD-Price
-  #Alpenglow
-  #Documents
-  #MoneyWiz
-  #Tripsy
-  #Currency
-  #llsyd
-  #eTicket
-  #ELSA
-  #DailyArt
-  #baimiao
-  #Bloomberg
+#name= Egern Scripts
+#time= 2024/11/25
+#list= JD-Price/Alpenglow/Documents/MoneyWiz/Tripsy/Currency/llsyd/eTicket/ELSA/DailyArt/baimiao/Bloomberg
+#numner= 12
+#tag= VIP
 
 scriptings:
 - http_response:
@@ -89,7 +79,7 @@ mitm:
   hostnames:
     includes:
     - api.m.jd.com
-    - *.pdfexpert.com
+    - '*.pdfexpert.com'
     - firstclass.tripsy.app
     - vira.llsapp.com
     - api.revenuecat.com
