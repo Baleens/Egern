@@ -15,9 +15,8 @@ log.trackingio.com = server:https://223.5.5.5/dns-query
 *.cn = server:https://223.5.5.5/dns-query
 # > Apple
 # refer: https://support.apple.com/zh-cn/HT210060
-networking.apple = server:https://doh.dns.apple.com/dns-query
 # Apple.com
-# *.apple.com = server:https://doh.dns.apple.com/dns-query
+*.apple.com = server:https://doh.dns.apple.com/dns-query
 # iCloud.com
 *.icloud.com = server:https://doh.dns.apple.com/dns-query
 
