@@ -6,7 +6,7 @@
 
 [Script]
 #JD-price
-JD-price = type=http-response, pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig)$, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js, requires-body=true
+JD-price = type=http-response, pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig), script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
 #Alpenglow    
 AlpenglowP = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$, script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/AlpenglowProCrack.js, requires-body=true
 #Documents    
