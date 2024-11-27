@@ -74,11 +74,6 @@ scriptings:
     match: ^https:\/\/mobapi\.bloomberg\.com\/wssmobile\/v1\/user\/subscription
     script_url: https://raw.githubusercontent.com/leey668/pyer/main/bloomberg.js
     body-required: true
-- http_response:
-    name: Xcurrency
-    match: ^https?:\/\/(xremit\.xcurrency|explorer.tratao)\.com\/api\/client\/xtool\/vip
-    script_url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/jijianhuilv.js
-    body_required: true
 
 mitm:
   hostnames:
@@ -92,5 +87,3 @@ mitm:
     - api.getdailyart.com
     - baimiao.uzero.cn
     - mobapi.bloomberg.com
-    - xremit.xcurrency.com
-    - explorer.tratao.com
