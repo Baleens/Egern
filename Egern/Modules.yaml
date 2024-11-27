@@ -76,7 +76,7 @@ scriptings:
 - htttp_response:
     name: AppRaven
     match: ^https:\/\/appraven\.net\/appraven\/graphql$
-    script_url: https://raw.githubusercontent.com/sooyaaabo/Loon/main/Script/AppRaven/AppRaven.js
+    script_url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/AppRaven.js
     body_required: true 
 
 mitm:
