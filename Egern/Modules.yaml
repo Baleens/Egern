@@ -1,7 +1,7 @@
 #name= Egern Scripts
-#time= 2024/11/25
-#list= JD-Price/Alpenglow/Documents/MoneyWiz/Tripsy/Currency/llsyd/eTicket/ELSA/DailyArt/baimiao/Bloomberg
-#numner= 12
+#time= 2024/11/27
+#list= [JD-Price, Alpenglow, Documents, MoneyWiz, Tripsy, Currency, llsyd, eTicket, ELSA, DailyArt, baimiao, Bloomberg, AppRaven]
+#numner= 13
 #tag= VIP
 
 scriptings:
@@ -30,7 +30,6 @@ scriptings:
     match: ^https?:\/\/firstclass\.tripsy\.app\/api\/v\d\/receipt\/update
     script_url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/Tripsy.js
     body_required: true
-    binary_body: false
 - http_request:
     name: Currency1
     match: ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)
@@ -73,7 +72,12 @@ scriptings:
     name: Bloomberg
     match: ^https:\/\/mobapi\.bloomberg\.com\/wssmobile\/v1\/user\/subscription
     script_url: https://raw.githubusercontent.com/leey668/pyer/main/bloomberg.js
-    body-required: true    
+    body_required: true    
+- htttp_response:
+    name: AppRaven
+    match: ^https:\/\/appraven\.net\/appraven\/graphql
+    script_url: https://raw.githubusercontent.com/sooyaaabo/Loon/main/Script/AppRaven/AppRaven.js
+    body_required: true
 
 mitm:
   hostnames:
@@ -87,3 +91,4 @@ mitm:
     - api.getdailyart.com
     - baimiao.uzero.cn
     - mobapi.bloomberg.com
+    - appraven.net
