@@ -11,14 +11,6 @@ log.trackingio.com = server:https://223.5.5.5/dns-query
 *.llsapp.com = server:https://223.5.5.5/dns-query
 *.llsserver.com = server:https://223.5.5.5/dns-query
 *.liulishuo.com = server:https://223.5.5.5/dns-query
-# > cn domain
-*.cn = server:https://223.5.5.5/dns-query
-# > Apple
-# refer: https://support.apple.com/zh-cn/HT210060
-# Apple.com
-*.apple.com = server:https://223.5.5.5/dns-query
-# iCloud.com
-*.icloud.com = server:https://223.5.5.5/dns-query
 
 [Script]
 #Alpenglow    
