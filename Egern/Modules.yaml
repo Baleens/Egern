@@ -74,12 +74,6 @@ scriptings:
     match: ^https:\/\/mobapi\.bloomberg\.com\/wssmobile\/v1\/user\/subscription
     script_url: https://raw.githubusercontent.com/leey668/pyer/main/bloomberg.js
     body-required: true
-- htttp_response:
-    name: AppRaven
-    match: ^https:\/\/appraven\.net\/appraven\/graphql
-    script_url: https://raw.githubusercontent.com/sooyaaabo/Loon/main/Script/AppRaven/AppRaven.js
-    debug: true
-    body_required: true
 - http_response:
     name: Xcurrency
     match: ^https?:\/\/(xremit\.xcurrency|explorer.tratao)\.com\/api\/client\/xtool\/vip
@@ -98,6 +92,5 @@ mitm:
     - api.getdailyart.com
     - baimiao.uzero.cn
     - mobapi.bloomberg.com
-    - appraven.net
     - xremit.xcurrency.com
     - explorer.tratao.com
