@@ -1,7 +1,7 @@
 #!name= loon-VIP-plugins
-#!date= 2024/11/25
-#!list= Alpenglow\Documents\MoneyWiz\Tripsy\Currency\llsyd\eTicket\ELSA\DailyArt\baimiao\Bloomberg
-#!number= 11
+#!date= 2024/11/27
+#!list= Alpenglow\Documents\MoneyWiz\Tripsy\Currency\llsyd\eTicket\ELSA\DailyArt\baimiao\Bloomberg\AppRaven
+#!number= 12
 #!tag= VIP
 
 [Host]
@@ -45,6 +45,7 @@ http-response ^https?:\/\/api\.getdailyart\.com\/api\/(subscription\/verified|au
 http-response ^https?:\/\/baimiao\.uzero\.cn\/api\/.+\/(appLaunchWithUser|getAnnouncement|checkLoginClient) requires-body= true,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/baimiao.js
 #Bloomberg
 http-response ^https:\/\/mobapi\.bloomberg\.com\/wssmobile\/v1\/user\/subscription requires-body= true,script-path=https://raw.githubusercontent.com/leey668/pyer/main/bloomberg.js
-
+#AppRaven
+http-response ^https:\/\/appraven\.net\/appraven\/graphql requires-body = true,script-path=https://raw.githubusercontent.com/sooyaaabo/Loon/main/Script/AppRaven/AppRaven.js
 [MITM]
-hostname = *.pdfexpert.com,firstclass.tripsy.app,vira.llsapp.com,api.revenuecat.com,pool.elsanow.io,api.getdailyart.com,baimiao.uzero.cn,mobapi.bloomberg.com
+hostname = *.pdfexpert.com,firstclass.tripsy.app,vira.llsapp.com,api.revenuecat.com,pool.elsanow.io,api.getdailyart.com,baimiao.uzero.cn,mobapi.bloomberg.com,appraven.net
