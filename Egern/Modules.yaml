@@ -7,81 +7,81 @@
 scriptings:
   - http_response:
       name: "JD-Price"
-      match: 'https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig)'
+      match: '^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig)'
       script_url: "https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js"
       body_required: true 
   - http_response:
       name: Alpenglow
-      match: 'https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})'
+      match: '^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})'
       script_url: "https://raw.githubusercontent.com/yqc007/QuantumultX/master/AlpenglowProCrack.js"
       body_required: true 
   - http_request:
       name: Documents
-      match: 'https?:\/\/license\.pdfexpert\.com\/api\/2.0\/documents\/subscription\/refresh'
+      match: '^https?:\/\/license\.pdfexpert\.com\/api\/2.0\/documents\/subscription\/refresh'
       script_url: "https://raw.githubusercontent.com/Yu9191/Rewrite/main/Documents.js"
       body_required: true 
   - http_response:
       name: MoneyWiz
-      match: 'https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt'
+      match: '^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt'
       script_url: "https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js"
       body_required: true 
   - http_response:
       name: Tripsy
-      match: 'https?:\/\/firstclass\.tripsy\.app\/api\/v\d\/receipt\/update'
+      match: '^https?:\/\/firstclass\.tripsy\.app\/api\/v\d\/receipt\/update'
       script_url: "https://raw.githubusercontent.com/chxm1023/Rewrite/main/Tripsy.js"
       body_required: true 
   - http_request:
       name: "Currency1"
-      match: 'https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)'
+      match: '^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)'
       script_url: "https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js"
   - http_response:
       name: "Currency2"
-      match: 'https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)'
+      match: '^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)'
       script_url: "https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js"
       body_required: true 
   - http_response:
       name: llsyd
-      match: 'https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$'
+      match: '^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$'
       script_url: "https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/llsyd.js"
       body_required: true 
   - http_request:
       name: "eTicket1"
-      match: 'https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)'
+      match: '^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)'
       script_url: "https://raw.githubusercontent.com/chxm1023/Rewrite/main/Revenuecat/chepiaopiao.js"
   - http_response:
       name: "eTicket2"
-      match: 'https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)'
+      match: '^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)'
       script_url: "https://raw.githubusercontent.com/chxm1023/Rewrite/main/Revenuecat/chepiaopiao.js"
       body_required: true 
   - http_response:
       name: ELSA
-      match: 'https?:\/\/pool\.elsanow\.io\/(user\/api\/v\d\/purchase|entitlement\/api\/v\d\/user\/entitlements)'
+      match: '^https?:\/\/pool\.elsanow\.io\/(user\/api\/v\d\/purchase|entitlement\/api\/v\d\/user\/entitlements)'
       script_url: "https://raw.githubusercontent.com/chxm1023/Rewrite/main/elsa.js"
       body_required: true 
   - http_response:
       name: DailyArt
-      match: 'https?:\/\/api\.getdailyart\.com\/api\/(subscription\/verified|auth\/login|check-logged)'
+      match: '^https?:\/\/api\.getdailyart\.com\/api\/(subscription\/verified|auth\/login|check-logged)'
       script_url: "https://raw.githubusercontent.com/chxm1023/Rewrite/main/DailyArt.js"
       body_required: true 
   - http_response:
       name: baimiao
-      match: 'https?:\/\/baimiao\.uzero\.cn\/api\/.+\/(appLaunchWithUser|getAnnouncement|checkLoginClient)'
+      match: '^https?:\/\/baimiao\.uzero\.cn\/api\/.+\/(appLaunchWithUser|getAnnouncement|checkLoginClient)'
       script_url: "https://raw.githubusercontent.com/chxm1023/Rewrite/main/baimiao.js"
       body_required: true 
   - http_response:
       name: Bloomberg
-      match: 'https:\/\/mobapi\.bloomberg\.com\/wssmobile\/v1\/user\/subscription'
+      match: '^https:\/\/mobapi\.bloomberg\.com\/wssmobile\/v1\/user\/subscription'
       script_url: "https://raw.githubusercontent.com/leey668/pyer/main/bloomberg.js"
       body_required: true 
   - htttp_response:
       name: AppRaven
-      match: 'https:\/\/appraven\.net\/appraven\/graphql'
+      match: '^https:\/\/appraven\.net\/appraven\/graphql'
       script_url: "https://raw.githubusercontent.com/sooyaaabo/Loon/main/Script/AppRaven/AppRaven.js"
       debug: true 
       body_required: true 
   - http_response:
       name: Xcurrency
-      match: 'https?:\/\/(xremit\.xcurrency|explorer.tratao)\.com\/api\/client\/xtool\/vip'
+      match: '^https?:\/\/(xremit\.xcurrency|explorer.tratao)\.com\/api\/client\/xtool\/vip'
       script_url: "https://raw.githubusercontent.com/chxm1023/Rewrite/main/jijianhuilv.js"
       body_required: true 
 
