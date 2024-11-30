@@ -5,7 +5,8 @@
 #!tag= VIP
 
 [Rewrite]
-^https?:\/\/api\.tidal\.com\/v1\/tracks/\d+\/playbackinfo mock-response-body data-type=json data-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/tidal.js
+^https?:\/\/api\.tidal\.com\/v1\/tracks/\d+\/playbackinfo mock-response-body data-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/tidal.js
+^https?:\/\/api\.tidal\.com\/v1\/tracks/\d+\/playbackinfo mock-request-body data-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/tidal.js
 [Host]
 # > liulishuo
 log.trackingio.com = server:https://223.5.5.5/dns-query
