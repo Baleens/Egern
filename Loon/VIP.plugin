@@ -1,7 +1,7 @@
 #!name= loon-VIP-plugins
-#!date= 2024/11/30
+#!date= 2024/12/08
 #!list= Alpenglow\Documents\MoneyWiz\Tripsy\Currency\llsyd\eTicket\ELSA\DailyArt\baimiao\Bloomberg\AppRaven\Xcurrency\Tidal\dcm
-#!number= 15
+#!number= 16
 #!tag= VIP
 
 [Host]
@@ -50,5 +50,8 @@ http-response ^https?:\/\/api\.tidal\.com\/v1\/users\/\d+\/subscription.+ requir
 http-request ^https?:\/\/api\.tidal\.com\/v1\/tracks/\d+\/playbackinfo requires-body = true,script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/tidal.js
 #dcm
 http-response ^https?:\/\/app\.theinitium\.com\/subs\/initiummedia_subs\/verify_subscription requires-body = true,script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/dcm.js
+#FlipClock
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body = true,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js
+
 [MITM]
-hostname = *.pdfexpert.com,firstclass.tripsy.app,vira.llsapp.com,api.revenuecat.com,pool.elsanow.io,api.getdailyart.com,baimiao.uzero.cn,mobapi.bloomberg.com,appraven.net,xremit.xcurrency.com,explorer.tratao.com,api.tidal.com,app.theinitium.com
+hostname = *.pdfexpert.com,firstclass.tripsy.app,vira.llsapp.com,api.revenuecat.com,pool.elsanow.io,api.getdailyart.com,baimiao.uzero.cn,mobapi.bloomberg.com,appraven.net,xremit.xcurrency.com,explorer.tratao.com,api.tidal.com,app.theinitium.com,buy.itunes.apple.com
