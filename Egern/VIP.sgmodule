@@ -11,10 +11,10 @@ JD-price = type=http-response, pattern=^https?:\/\/api\.m\.jd\.com\/client\.acti
 AlpenglowP = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$, script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/AlpenglowProCrack.js, requires-body=true
 #Documents    
 Documents = type=http-request, pattern=^https?:\/\/license\.pdfexpert\.com\/api\/2.0\/documents\/subscription\/refresh, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Documents.js, requires-body=true
-#MoneyWiz
-MoneyWiz = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js, requires-body=true
 #FlipClock
 FlipClock = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js, requires-body=true
+#MoneyWiz
+MoneyWiz = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js, requires-body=true
 #Tripsy
 Tripsy = type=http-response, pattern=^https?:\/\/firstclass\.tripsy\.app\/api\/v\d\/receipt\/update, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Tripsy.js, requires-body=true
 #Currency
@@ -44,4 +44,4 @@ Tidal = type=http-request, pattern=^https?:\/\/api\.tidal\.com\/v1\/tracks/\d+\/
 Initium = type=http-response, pattern=^https?:\/\/app\.theinitium\.com\/subs\/initiummedia_subs\/verify_subscription, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/dcm.js, requires-body=true
 
 [MITM]
-hostname = %APPEND% *.pdfexpert.com, api.m.jd.com, firstclass.tripsy.app, vira.llsapp.com, api.revenuecat.com, pool.elsanow.io, api.getdailyart.com, baimiao.uzero.cn, mobapi.bloomberg.com, appraven.net, xremit.xcurrency.com, explorer.tratao.com, api.tidal.com, app.theinitium.com
+hostname = %APPEND% *.pdfexpert.com, api.m.jd.com, firstclass.tripsy.app, vira.llsapp.com, api.revenuecat.com, pool.elsanow.io, api.getdailyart.com, baimiao.uzero.cn, mobapi.bloomberg.com, appraven.net, xremit.xcurrency.com, explorer.tratao.com, api.tidal.com, app.theinitium.com, buy.itunes.apple.com
