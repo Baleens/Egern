@@ -1,0 +1,11 @@
+
+#!name= Picsew
+#!date= 2025/02/23
+#!list= Picsew
+
+[Script]
+#Picsew
+Picsew = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/Guding88/Script/main/Picsew.js, requires-body=true
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
