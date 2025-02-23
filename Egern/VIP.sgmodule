@@ -1,7 +1,7 @@
 #!name= VIP-sgmodule
 #!date= 2025/02/23
-#!list= Alpenglow\Documents\MoneyWiz\Tripsy\Currency\llsyd\eTicket\ELSA\DailyArt\baimiao\Bloomberg\AppRaven\Xcurrency\Initium\Picsew
-#!number= 15
+#!list= Alpenglow\Documents\MoneyWiz\Tripsy\Currency\llsyd\eTicket\ELSA\DailyArt\baimiao\Bloomberg\AppRaven\Xcurrency\Initium
+#!number= 14
 #!tag= VIP
 
 [Script]
@@ -34,7 +34,6 @@ AppRaven = type=http-response, pattern=^https:\/\/appraven\.net\/appraven\/graph
 Xcurrency = type=http-response, pattern=^https?:\/\/(xremit\.xcurrency|explorer.tratao)\.com\/api\/client\/xtool\/vip, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jijianhuilv.js, requires-body=true
 #Initium
 Initium = type=http-response, pattern=^https?:\/\/app\.theinitium\.com\/subs\/initiummedia_subs\/verify_subscription, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/dcm.js, requires-body=true
-#Picsew
-Picsew = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/Guding88/Script/main/Picsew.js, requires-body=true
+
 [MITM]
 hostname = %APPEND% *.pdfexpert.com, firstclass.tripsy.app, vira.llsapp.com, api.revenuecat.com, pool.elsanow.io, api.getdailyart.com, baimiao.uzero.cn, mobapi.bloomberg.com, appraven.net, xremit.xcurrency.com, explorer.tratao.com, app.theinitium.com, buy.itunes.apple.com
