@@ -1,5 +1,5 @@
 #!name= VIP-sgmodule
-#!date= 2025/03/13
+#!date= 2025/06/25
 #!list= Alpenglow\Documents\MoneyWiz\Tripsy\Currency\llsyd\eTicket\ELSA\DailyArt\baimiao\Bloomberg\AppRaven\Xcurrency\Initium\FlightTracker
 #!number= 15
 #!tag= VIP
@@ -39,5 +39,7 @@ FlightTracker = type=http-response, pattern=^https?:\/\/api\.adapty\.io\/api\/v\
 #jihe
 jihe = type=http-response, pattern=^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=true
 jihe = type=http-request, pattern=^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
+#FT
+FT = type=http-response, pattern=^https?:\/\/.*\.cloudfront\.net\/index\.php\/jsapi\/(paywall|get_story_more_info), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/cloudfront.js
 [MITM]
-hostname = %APPEND% *.pdfexpert.com, firstclass.tripsy.app, vira.llsapp.com, api.revenuecat.com, pool.elsanow.io, api.getdailyart.com, baimiao.uzero.cn, mobapi.bloomberg.com, appraven.net, xremit.xcurrency.com, explorer.tratao.com, app.theinitium.com, buy.itunes.apple.com, api.adapty.io, api.rc-backup.com
+hostname = %APPEND% *.pdfexpert.com, firstclass.tripsy.app, vira.llsapp.com, api.revenuecat.com, pool.elsanow.io, api.getdailyart.com, baimiao.uzero.cn, mobapi.bloomberg.com, appraven.net, xremit.xcurrency.com, explorer.tratao.com, app.theinitium.com, buy.itunes.apple.com, api.adapty.io, api.rc-backup.com, *.cloudfront.net, ftmailbox.cn
