@@ -2,6 +2,7 @@
 
 # WeChat
 DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
+DOMAIN,report-online.sh.wxgateway.com
 DOMAIN,dldir1.qq.com
 DOMAIN,slife.xy-asia.com
 DOMAIN,soup.v.qq.com
@@ -25,6 +26,7 @@ DOMAIN-SUFFIX,weixin.com
 DOMAIN-SUFFIX,weixin.qq.com
 DOMAIN-SUFFIX,weixinbridge.com
 DOMAIN-SUFFIX,weixinsxy.com
+DOMAIN-SUFFIX,wxgateway.com
 DOMAIN-SUFFIX,wx.gtimg.com
 DOMAIN-SUFFIX,wx.qq.com
 DOMAIN-SUFFIX,wxapp.tc.qq.com
