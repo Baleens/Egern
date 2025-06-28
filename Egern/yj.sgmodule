@@ -1,0 +1,10 @@
+#!name=实时油价模块
+#!desc=显示本省实时油价
+#!auther= @RS0485 由 @keywos进行surge和Loon兼容性修改。
+#!arguments=YJDQ:填写你的地区（如guangdong/guangzhou）
+#!arguments-desc= 填本省/城市 名称拼音，直辖市请直接填拼音(如chongqing)\n 可去http://m.qiyoujiage.com 找到自己城市后查看网址里自己省份拼音（陕西和山西比较特殊）
+
+[Panel]
+YJ = script-name=YJ,update-interval=86400
+[Script]
+YJ = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/script/youjia.js,argument={{{YJDQ}}}
