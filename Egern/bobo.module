@@ -1,0 +1,19 @@
+#!name=bobo
+#!date=2025/9/29
+#!list=Endel/Flightradar24/Reddit/Symbolab/PikPak/IFTTT
+
+[Script]
+#Endel
+Endel = type=http-response, pattern=^https?:\/\/api-production\.endel\.io\/v\d\/call, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Endel/JS/Endel.js, requires-body=true, max-size=-1, timeout=60
+#Flightradar24
+Flightradar24 = type=http-response, pattern=^https?:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|subscribe), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Flightradar24/JS/Flightradar24.js, requires-body=true, max-size=-1, timeout=60
+#Reddit
+Reddit = type=http-response, pattern=^https?:\/\/gql(-fed)?\.reddit\.com, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Reddit/JS/Reddit.js, requires-body=true, max-size=-1, timeout=60
+#Symbolab
+Symbolab = type=http-response, pattern=^https?:\/\/scibug\.com\/appleSubscriptionValidate$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Symbolab/JS/Symbolab.js, requires-body=true, max-size=-1, timeout=60
+#PikPak
+PikPak = type=http-response, pattern=^https:\/\/api-drive\.mypikpak\.com\/(vip\/v\d\/(vip\/info|allSubscriptionStatus)|drive\/v\d\/about\?space), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/PikPak/JS/PikPak.js, requires-body=true, max-size=-1, timeout=60
+#IFTTT
+IFTTT = type=http-response, pattern=^https?:\/\/ifttt\.com\/api\/v3\/graph, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/IFTTT/JS/IFTTT.js, requires-body=true, max-size=-1, timeout=60
+[MITM]
+hostname= %APPEND% api-production.endel.io, mobile.flightradar24.com, gql.reddit.com, gql-fed.reddit.com, scibug.com, api-drive.mypikpak.com, ifttt.com
