@@ -1,0 +1,7 @@
+# Name: MESL
+# Describe: domain resolve for MESL
+
+DOMAIN,getmesl.com
+DOMAIN-KEYWORD,getmesl
+DOMAIN-SUFFIX,meslcloud.com
+DOMAIN-KEYWORD,meslcloud
