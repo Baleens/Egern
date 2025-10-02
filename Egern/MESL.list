@@ -1,7 +1,9 @@
 # Name: MESL
-# Describe: domain resolve for MESL
+# Describe: rule for MESL
 
 DOMAIN,getmesl.com
+DOMAIN,dp.me.cloudanys.com
+DOMAIN-KEYWORD,cloudanys
 DOMAIN-KEYWORD,getmesl
 DOMAIN-SUFFIX,meslcloud.com
 DOMAIN-KEYWORD,meslcloud
