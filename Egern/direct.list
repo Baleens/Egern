@@ -1,10 +1,13 @@
 # Name: additions list
 # Describe: direct
 
-# icity
+#icity
 DOMAIN,icity-static.icitycdn.com
 DOMAIN,icity-conf.2q10.com
 DOMAIN,icity-imsm.2q10.com
 DOMAIN,chassis-cdn.appcloudcdn.com
 DOMAIN-SUFFIX,icitycdn.com
 DOMAIN-SUFFIX,2q10.com
+
+#10086
+DOMAIN-SUFFIX,cmpassport.com
