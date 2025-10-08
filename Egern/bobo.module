@@ -1,6 +1,6 @@
 #!name=bobo
 #!date=2025/9/29
-#!list=Endel/Flightradar24/Reddit/Symbolab/PikPak/IFTTT
+#!list=Endel/Flightradar24/Reddit/Symbolab/PikPak/IFTTT/Grammarly
 
 [Script]
 #Endel
@@ -15,5 +15,8 @@ Symbolab = type=http-response, pattern=^https?:\/\/scibug\.com\/appleSubscriptio
 PikPak = type=http-response, pattern=^https:\/\/api-drive\.mypikpak\.com\/(vip\/v\d\/(vip\/info|allSubscriptionStatus)|drive\/v\d\/about\?space), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/PikPak/JS/PikPak.js, requires-body=true, max-size=-1, timeout=60
 #IFTTT
 IFTTT = type=http-response, pattern=^https?:\/\/ifttt\.com\/api\/v3\/graph, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/IFTTT/JS/IFTTT.js, requires-body=true, max-size=-1, timeout=60
+#Grammarly
+Grammarly = type=http-response, pattern=^https?:\/\/subscription\.grammarly\.com\/api\/v1\/subscription$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Grammarly/JS/JS-1/Grammarly.js, requires-body=true, max-size=-1
+
 [MITM]
-hostname= %APPEND% api-production.endel.io, mobile.flightradar24.com, gql.reddit.com, gql-fed.reddit.com, scibug.com, api-drive.mypikpak.com, ifttt.com
+hostname= %APPEND% api-production.endel.io, mobile.flightradar24.com, gql.reddit.com, gql-fed.reddit.com, scibug.com, api-drive.mypikpak.com, ifttt.com, subscription.grammarly.com
