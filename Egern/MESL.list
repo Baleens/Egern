@@ -2,6 +2,7 @@
 # Describe: rule for MESL
 
 DOMAIN,getmesl.com
+DOMAIN,dc.meslcloud.com
 DOMAIN,dp.me.cloudanys.com
 DOMAIN-KEYWORD,cloudanys
 DOMAIN-KEYWORD,getmesl
