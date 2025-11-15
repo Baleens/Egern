@@ -3,6 +3,11 @@
 # TestFlight
 DOMAIN-SUFFIX,trackingio.com
 
+#WeChat
+DOMAIN,servicewechat.com
+DOMAIN-SUFFIX,weixinbridge.com
+
+
 # youzheli
 DOMAIN-SUFFIX,tourzj.com
 DOMAIN-SUFFIX,zjwhhly.com
@@ -240,4 +245,5 @@ DOMAIN-SUFFIX,sfgy.org
 
 # youjia
 DOMAIN-SUFFIX,qiyoujiage.com
+
 
