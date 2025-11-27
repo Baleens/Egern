@@ -1,7 +1,7 @@
 #!name= VIP-sgmodule
-#!date= 2025/10/03
-#!list= Alpenglow\Documents\MoneyWiz\Tripsy\Currency\eTicket\ELSA\DailyArt\baimiao\Bloomberg\AppRaven\Xcurrency\Initium\FlightTracker\jihe
-#!number= 15
+#!date= 2025/11/26
+#!list= Alpenglow\Documents\MoneyWiz\Tripsy\Currency\ELSA\DailyArt\baimiao\Bloomberg\AppRaven\Xcurrency\Initium\FlightTracker\jihe
+#!number= 14
 #!tag= VIP
 
 [Script]
@@ -16,8 +16,6 @@ Tripsy = type=http-response, pattern=^https?:\/\/firstclass\.tripsy\.app\/api\/v
 #Currency
 Currency = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
 Currency = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=true
-#eTicket
-chepiaopiao = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$), script-path=https://raw.githubusercontent.com/Guding88/Script/main/chepiaopiao.js, requires-body=true
 #ELSA
 ELSA = type=http-response, pattern=^https?:\/\/pool\.elsanow\.io\/(user\/api\/v\d\/purchase|entitlement\/api\/v\d\/user\/entitlements), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/elsa.js, requires-body=true
 #DailyArt
