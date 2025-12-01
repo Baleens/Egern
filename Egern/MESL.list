@@ -4,7 +4,11 @@
 DOMAIN,getmesl.com
 DOMAIN,dc.meslcloud.com
 DOMAIN,dp.me.cloudanys.com
+DOMAIN,em.mesl.cloud
+DOMAIN-SUFFIX,meslcloud.com
+DOMAIN-SUFFIX,cloudanys.com
+DOMAIN-SUFFIX,mesl.com
 DOMAIN-KEYWORD,cloudanys
 DOMAIN-KEYWORD,getmesl
-DOMAIN-SUFFIX,meslcloud.com
 DOMAIN-KEYWORD,meslcloud
+DOMAIN-KETWORD,mesl
