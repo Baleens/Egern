@@ -1,7 +1,7 @@
 #!name= VIP-sgmodule
-#!date= 2025/11/26
-#!list= Alpenglow\Documents\MoneyWiz\Tripsy\Currency\ELSA\DailyArt\baimiao\Bloomberg\AppRaven\Xcurrency\Initium\FlightTracker\jihe
-#!number= 14
+#!date= 2025/12/31
+#!list= Alpenglow\Documents\MoneyWiz\Tripsy\Currency\ELSA\DailyArt\baimiao\Bloomberg\AppRaven\Xcurrency\FlightTracker\jihe
+#!number= 13
 #!tag= VIP
 
 [Script]
@@ -28,8 +28,6 @@ Bloomberg = type=http-response, pattern=^https:\/\/mobapi\.bloomberg\.com\/wssmo
 AppRaven = type=http-response, pattern=^https:\/\/appraven\.net\/appraven\/graphql, script-path=https://raw.githubusercontent.com/sooyaaabo/Loon/main/Script/AppRaven/AppRaven.js, requires-body=true
 #Xcurrency
 Xcurrency = type=http-response, pattern=^https?:\/\/(xremit\.xcurrency|explorer.tratao)\.com\/api\/client\/xtool\/vip, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jijianhuilv.js, requires-body=true
-#Initium
-Initium = type=http-response, pattern=^https?:\/\/app\.theinitium\.com\/subs\/initiummedia_subs\/verify_subscription, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/dcm.js, requires-body=true
 #FlightTracker
 FlightTracker = type=http-response, pattern=^https?:\/\/api\.adapty\.io\/api\/v\d\/sdk\/(analytics\/profiles|in-apps\/(apple\/receipt\/validate|purchase-containers)|purchase\/app-store), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/adapty.js, requires-body=true
 #jihe
@@ -37,4 +35,5 @@ jihe = type=http-response, pattern=^https:\/\/api\.(revenuecat|rc-backup)\.com\/
 jihe = type=http-request, pattern=^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
 
 [MITM]
-hostname = %APPEND% *.pdfexpert.com, firstclass.tripsy.app, api.revenuecat.com, pool.elsanow.io, api.getdailyart.com, baimiao.uzero.cn, mobapi.bloomberg.com, appraven.net, xremit.xcurrency.com, explorer.tratao.com, app.theinitium.com, buy.itunes.apple.com, api.adapty.io, api.rc-backup.com
+hostname = %APPEND% *.pdfexpert.com, firstclass.tripsy.app, api.revenuecat.com, pool.elsanow.io, api.getdailyart.com, baimiao.uzero.cn, mobapi.bloomberg.com, appraven.net, xremit.xcurrency.com, explorer.tratao.com, buy.itunes.apple.com, api.adapty.io, api.rc-backup.com
+
