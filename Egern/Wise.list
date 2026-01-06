@@ -1,0 +1,10 @@
+# Total line: 8
+
+DOMAIN,wise.com
+DOMAIN,api.wise.com
+DOMAIN,sst.wise.com
+DOMAIN,transferwise.com
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,transferwise.com
+DOMAIN-KEYWORD,wise
+DOMAIN-KEYWORD,transferwise
