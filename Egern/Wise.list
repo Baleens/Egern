@@ -1,9 +1,11 @@
-# Total line: 8
+# Total line: 10
 
 DOMAIN,wise.com
 DOMAIN,api.wise.com
 DOMAIN,sst.wise.com
 DOMAIN,transferwise.com
+DOMAIN,twcard.wise.com
+DOMAIN,gtm.wise.com
 DOMAIN-SUFFIX,wise.com
 DOMAIN-SUFFIX,transferwise.com
 DOMAIN-KEYWORD,wise
