@@ -7,6 +7,22 @@ DOMAIN,m.mobilex-static.hsbc.com.hk
 DOMAIN,rbwm-api.hsbc.com.hk
 DOMAIN,www.hsbc.com.hk
 DOMAIN-SUFFIX,hsbc.com.hk
+DOMAIN-SUFFIX,com.hk
+DOMAIN-SUFFIX,hk
 DOMAIN-KEYWORD,hsbc
+
+#BOCHK
+DOMAIN,mb.bochk.com
+DOMAIN,www.bochk.com
+DOMAIN,mba,bochk.com
+DOMAIN,ocs.bochk.com
+DOMAIN,ocscl.bochk.com
+DOMAIN,fio,bochk,com
+DOMAIN,bochk01.etnet.com.hk
+DOMAIN,bochk02.etnet.com.hk
+DOMAIN-SUFFIX,bochk.com
+DOMAIN-SUFFIX,etnet.com.hk
+DOMAIN-KEYWORD,bochk
+
 
 
