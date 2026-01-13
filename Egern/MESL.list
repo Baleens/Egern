@@ -1,13 +1,16 @@
 # Name: MESL
-# Describe: rule for MESL
+# Comment: rule for MESL
 
 DOMAIN,getmesl.com
 DOMAIN,dc.meslcloud.com
+DOMAIN,dc.meslcloud.org
+DOMAIN,dg.meslcloud.org
+DOMAIN,di.meslcloud.org
 DOMAIN,dp.me.cloudanys.com
 DOMAIN,em.mesl.cloud
 DOMAIN-SUFFIX,meslcloud.com
+DOMAIN-SUFFIX,meslcloud.org
 DOMAIN-SUFFIX,cloudanys.com
-DOMAIN-SUFFIX,mesl.com
 DOMAIN-KEYWORD,cloudanys
 DOMAIN-KEYWORD,getmesl
 DOMAIN-KEYWORD,meslcloud
