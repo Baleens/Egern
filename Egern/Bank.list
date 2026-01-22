@@ -1,5 +1,5 @@
 
-#HSBC
+#HSBC HK
 DOMAIN,cdnbc-wup.hsbc.com.hk
 DOMAIN,cdntm.hsbc.com.hk
 DOMAIN,click.messaging.hsbc.com.hk
@@ -14,15 +14,48 @@ DOMAIN-KEYWORD,hsbc
 #BOCHK
 DOMAIN,mb.bochk.com
 DOMAIN,www.bochk.com
-DOMAIN,mba,bochk.com
+DOMAIN,mba.bochk.com
+DOMAIN,vss.bochk.com
+DOMAIN,frp.bochk.com
+DOMAIN,idv.bochk.com
 DOMAIN,ocs.bochk.com
 DOMAIN,ocscl.bochk.com
-DOMAIN,fio,bochk,com
+DOMAIN,fio.bochk.com
 DOMAIN,bochk01.etnet.com.hk
 DOMAIN,bochk02.etnet.com.hk
+DOMAIN,bochk01.etdsinfo.com
+DOMAIN,bochk02.etdsinfo.com
+DOMAIN,bochkapp01.etnet.com.hk
 DOMAIN-SUFFIX,bochk.com
 DOMAIN-SUFFIX,etnet.com.hk
+DOMAIN-SUFFIX,etdsinfo.com
 DOMAIN-KEYWORD,bochk
+
+# ZA Bank
+DOMAIN,bank.za.group
+DOMAIN,bankappgw.za.group
+DOMAIN,cdn.za.group
+DOMAIN,i18n.za.group
+DOMAIN,mobile.za.group
+DOMAIN,appguard.za.group
+DOMAIN,offline.za.group
+DOMAIN,cdn.zaticdn.com
+DOMAIN,alicdn.zaticdn.com
+DOMAIN,testcdn.zaticdn.com
+DOMAIN,appmon-prd.zajourney.com
+DOMAIN,webmon-prd.zajourney.com
+DOMAIN,integrate-appgw.zajourney.com
+DOMAIN,bank-sbsmarket.zafinsvc.com
+DOMAIN,bank-stock.zafinsvc.com
+DOMAIN,marketpush-prd.zafinsvc.com
+DOMAIN-SUFFIX,za.group
+DOMAIN-SUFFIX,zaticdn.com
+DOMAIN-SUFFIX,zajourney.com
+DOMAIN-SUFFIX,zafinsvc.com
+
+
+
+
 
 
 
