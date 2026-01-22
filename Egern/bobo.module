@@ -1,6 +1,6 @@
 #!name=bobo
 #!date=2026/01/22
-#!list=Endel/Flightradar24/Reddit/Symbolab/PikPak/IFTTT/Grammarly/GoodNote6/AdblockPro
+#!list=Endel/Flightradar24/Reddit/Symbolab/PikPak/IFTTT/Grammarly/GoodNote6/AdblockPro/Craft
 
 [Script]
 #Endel
@@ -22,6 +22,8 @@ GoodNotes6 = type=http-response, pattern=^https:\/\/isi\.csan\.goodnotes\.com\/.
 GoodNotes6 = type=http-request, pattern=^https:\/\/isi\.csan\.goodnotes\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Goodnotes6/JS/JS-1/GoodNotes6.js, timeout=60
 #AdblockPro
 AdBlockPro = type=http-response, pattern=https:\/\/api\.adblockpro\.app\/verify, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/AdBlockPro/JS/AdBlock.js, requires-body=true, max-size=-1, timeout=60
+#Craft
+Craft = type=http-response, pattern=^https?:\/\/(api|docs)\.craft\.do\/(api\/)?(auth\/v\d\/profile|subscription\/(receipt|teams\/get-subscriptions)), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Craft/JS/Craft.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
-hostname= %APPEND% api-production.endel.io, mobile.flightradar24.com, gql.reddit.com, gql-fed.reddit.com, scibug.com, api-drive.mypikpak.com, ifttt.com, subscription.grammarly.com, isi.csan.goodnotes.com, api.adblockpro.app
+hostname= %APPEND% api-production.endel.io, mobile.flightradar24.com, gql.reddit.com, gql-fed.reddit.com, scibug.com, api-drive.mypikpak.com, ifttt.com, subscription.grammarly.com, isi.csan.goodnotes.com, api.adblockpro.app, api.craft.do
