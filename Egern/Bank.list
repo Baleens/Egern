@@ -59,7 +59,14 @@ DOMAIN-KEYWORD,zaticdn
 DOMAIN-KEYWORD,zajourney
 DOMAIN-KEYWORD,zafinsvc
 
-
-
-
-
+#LongBridge
+DOMAIN,longbridge.qiyukf.net
+DOMAIN,longbridge.app.wbrks.com
+DOMAIN,longbridge.activity.wbrks.com
+DOMAIN,support.longbridgehk.com
+DOMAIN,api-status.longbridgeapp.com
+DOMAIN-SUFFIX,longbridgehk.com
+DOMAIN-suffix,longbridgeapp.com
+DOMAIN-KEYWORD,longbridge
+DOMAIN-KEYWORD,longbridgehk
+DOMAIN-KEYWORD,longbridgeapp
