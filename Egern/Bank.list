@@ -59,6 +59,21 @@ DOMAIN-KEYWORD,zaticdn
 DOMAIN-KEYWORD,zajourney
 DOMAIN-KEYWORD,zafinsvc
 
+#Octopus
+DOMAIN,ocl.bio
+DOMAIN,octopushk.link
+DOMAIN,octopus.queue-it.net
+DOMAIN,app.oepay.octopus-cards.com
+DOMAIN,static-oepay-app.octopus-cards.com
+DOMAIN,loy-api-ws.octopus-cards.com
+DOMAIN,wfe.oos.octopus-cards.com
+DOMAIN,www.octopuscards.com
+DOMAIN-SUFFIX,octopus-cards.com
+DOMAIN-SUFFIX,octopuscards.com
+DOMAIN-KEYWORD,octopus-cards
+DOMAIN-KEYWORD,octopuscards
+
+
 #LongBridge
 DOMAIN,longbridge.qiyukf.net
 DOMAIN,longbridge.app.wbrks.com
