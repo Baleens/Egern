@@ -1,8 +1,0 @@
-# Addition for reject rules:
-
-## 农业银行代理检测
-DOMAIN,msmp.abchina.com.cn
-
-## 淘宝 开屏广告
-DOMAIN,heic.alicdn.com
-DOMAIN-SUFFIX,h-adashx.ut.taobao.com
