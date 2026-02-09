@@ -14,10 +14,11 @@ DOMAIN-SUFFIX,com.hk
 DOMAIN-SUFFIX,hk
 DOMAIN-KEYWORD,hsbc
 
-#BOCHK
+#BOCHK & BoCPay+
 DOMAIN,mb.bochk.com
 DOMAIN,www.bochk.com
 DOMAIN,mba.bochk.com
+DOMAIN,ewa.bochk.com
 DOMAIN,vss.bochk.com
 DOMAIN,frp.bochk.com
 DOMAIN,idv.bochk.com
@@ -33,6 +34,9 @@ DOMAIN-SUFFIX,bochk.com
 DOMAIN-SUFFIX,etnet.com.hk
 DOMAIN-SUFFIX,etdsinfo.com
 DOMAIN-KEYWORD,bochk
+DOMAIN-KEYWORD,bochk01
+DOMAIN-KEYWORD,bochk02
+DOMAIN-KEYWORD,bochkapp01
 
 # ZA Bank
 DOMAIN,bank.za.group
