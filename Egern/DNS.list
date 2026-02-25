@@ -12,6 +12,11 @@ DOMAIN-SUFFIX,weixinbridge.com
 DOMAIN-SUFFIX,tourzj.com
 DOMAIN-SUFFIX,zjwhhly.com
 
+# caiyun weather
+DOMAIN,api.caiyunapp.com
+DOMAIN-SUFFIX,caiyunapp.com
+
+
 # liulishuo
 DOMAIN-SUFFIX,appsflyer.com
 DOMAIN-SUFFIX,llscdn.com
@@ -245,5 +250,6 @@ DOMAIN-SUFFIX,sfgy.org
 
 # youjia
 DOMAIN-SUFFIX,qiyoujiage.com
+
 
 
