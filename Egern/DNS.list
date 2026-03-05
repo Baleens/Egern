@@ -4,18 +4,35 @@
 DOMAIN-SUFFIX,trackingio.com
 
 #WeChat
-DOMAIN,servicewechat.com
+DOMAIN-SUFFIX,iot-tencent.com
+DOMAIN-SUFFIX,lbs.gtimg.com
+DOMAIN-SUFFIX,map.qq.com
+DOMAIN-SUFFIX,servicewechat.com
+DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,up-hl.3g.qq.com
+DOMAIN-SUFFIX,vweixinthumb.tc.qq.com
+DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,wechatlegal.net
+DOMAIN-SUFFIX,wechatos.net
+DOMAIN-SUFFIX,wechatpay.com
+DOMAIN-SUFFIX,weixin.com
+DOMAIN-SUFFIX,weixin.qq.com
 DOMAIN-SUFFIX,weixinbridge.com
-
+DOMAIN-SUFFIX,weixinsxy.com
+DOMAIN-SUFFIX,wx.gtimg.com
+DOMAIN-SUFFIX,wx.qq.com
+DOMAIN-SUFFIX,wxapp.tc.qq.com
+DOMAIN-SUFFIX,wxs.qq.com
+DOMAIN-SUFFIX,yun-hl.3g.qq.com
 
 # youzheli
 DOMAIN-SUFFIX,tourzj.com
 DOMAIN-SUFFIX,zjwhhly.com
 
 # caiyun weather
-DOMAIN,api.caiyunapp.com
 DOMAIN-SUFFIX,caiyunapp.com
-
+DOMAIN-SUFFIX,caiyun.com
+DOMAIN-SUFFIX,caiyunai.com
 
 # liulishuo
 DOMAIN-SUFFIX,appsflyer.com
@@ -38,6 +55,32 @@ DOMAIN-SUFFIX,fengniaozhongbao.cn
 DOMAIN-SUFFIX,xingxuanwaimai.com
 DOMAIN-SUFFIX,xyzele.com
 DOMAIN-SUFFIX,youcaishop.cn
+
+# 10086 
+DOMAIN-SUFFIX,10086kuaixiu.com
+DOMAIN-SUFFIX,12530.com
+DOMAIN-SUFFIX,139.com
+DOMAIN-SUFFIX,andfx.net
+DOMAIN-SUFFIX,chinamobile.com
+DOMAIN-SUFFIX,chinamobiledevice.com
+DOMAIN-SUFFIX,chinamobileltd.com
+DOMAIN-SUFFIX,cmccb2b.com
+DOMAIN-SUFFIX,cmdcxls.com
+DOMAIN-SUFFIX,cmpassport.com
+DOMAIN-SUFFIX,fetion-portal.com
+DOMAIN-SUFFIX,fetionpic.com
+DOMAIN-SUFFIX,fxltsbl.com
+DOMAIN-SUFFIX,lovev.com
+DOMAIN-SUFFIX,migucloud.com
+DOMAIN-SUFFIX,migufm.com
+DOMAIN-SUFFIX,migugk.com
+DOMAIN-SUFFIX,migutv.com
+DOMAIN-SUFFIX,miguvideo.com
+DOMAIN-SUFFIX,mmarket.com
+DOMAIN-SUFFIX,mmarket6.com
+DOMAIN-SUFFIX,monternet.com
+DOMAIN-SUFFIX,warmchina121.com
+DOMAIN-SUFFIX,zdsdp.com
 
 # Bank
 
@@ -214,6 +257,7 @@ DOMAIN-SUFFIX,mafengwo.cn
 
 # fengchao
 DOMAIN-SUFFIX,fcbox.com
+DOMAIN-SUFFIX,fcboxmall.com
 
 # cainiao
 DOMAIN-SUFFIX,56che.com
@@ -250,6 +294,7 @@ DOMAIN-SUFFIX,sfgy.org
 
 # youjia
 DOMAIN-SUFFIX,qiyoujiage.com
+
 
 
 
