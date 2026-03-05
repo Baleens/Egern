@@ -1,6 +1,6 @@
 #!name=bobo
 #!date=2026/03/05
-#!list=Endel/Flightradar24/Reddit/Symbolab/PikPak/IFTTT/Grammarly/GoodNote6/AdblockPro/Craft/Musixmatch/xcz
+#!list=Endel/Flightradar24/Reddit/Symbolab/PikPak/Grammarly/GoodNote6/AdblockPro/Craft/Musixmatch/xcz
 
 [Script]
 #Endel
@@ -13,8 +13,6 @@ Reddit = type=http-response, pattern=^https?:\/\/gql(-fed)?\.reddit\.com, script
 Symbolab = type=http-response, pattern=^https?:\/\/scibug\.com\/appleSubscriptionValidate$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Symbolab/JS/Symbolab.js, requires-body=true, max-size=-1, timeout=60
 #PikPak
 PikPak = type=http-response, pattern=^https:\/\/api-drive\.mypikpak\.com\/(vip\/v\d\/(vip\/info|allSubscriptionStatus)|drive\/v\d\/about\?space), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/PikPak/JS/PikPak.js, requires-body=true, max-size=-1, timeout=60
-#IFTTT
-IFTTT = type=http-response, pattern=^https?:\/\/ifttt\.com\/api\/v3\/graph, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/IFTTT/JS/JS-1/IFTTT.js, requires-body=true, max-size=-1, timeout=60
 #Grammarly
 Grammarly = type=http-response, pattern=^https?:\/\/subscription\.grammarly\.com\/api\/v1\/subscription$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Grammarly/JS/JS-1/Grammarly.js, requires-body=true, max-size=-1
 #GoodNote6
@@ -30,4 +28,4 @@ Musixmatch = type=http-response, pattern=^https?:\/\/apic\.musixmatch\.com\/ws\/
 xcz = type=http-response, pattern=^https?:\/\/lchttpapi\.xczim\.com\/*, script-path=https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/xcz.js, requires-body=true
 
 [MITM]
-hostname= %APPEND% api-production.endel.io, mobile.flightradar24.com, gql.reddit.com, gql-fed.reddit.com, scibug.com, api-drive.mypikpak.com, ifttt.com, subscription.grammarly.com, isi.csan.goodnotes.com, api.adblockpro.app, api.craft.do, apic.musixmatch.com, lchttpapi.xczim.com
+hostname= %APPEND% api-production.endel.io, mobile.flightradar24.com, gql.reddit.com, gql-fed.reddit.com, scibug.com, api-drive.mypikpak.com, subscription.grammarly.com, isi.csan.goodnotes.com, api.adblockpro.app, api.craft.do, apic.musixmatch.com, lchttpapi.xczim.com
