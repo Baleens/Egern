@@ -2,19 +2,7 @@
 #!date= 2026/03/05
 #!list= Alpenglow\Documents\MoneyWiz\Tripsy\Currency\ELSA\DailyArt\baimiao\Bloomberg\AppRaven\Xcurrency\FlightTracker\jihe
 #!desc=Manage individual script status (On/Off) via the Module panel. Default is True.
-#!compat_Arguments:
-Alpenglow_Switch = select,"true","false"
-Documents_Switch = select,"true","false"
-MoneyWiz_Switch = select,"true","false"
-Tripsy_Switch = select,"true","false"
-Currency_Switch = select,"true","false"
-ELSA_Switch = select,"true","false"
-DailyArt_Switch = select,"true","false"
-baimiao_Switch = select,"true","false"
-Bloomberg_Switch = select,"true","false"
-AppRaven_Switch = select,"true","false"
-Xcurrency_Switch = select,"true","false"
-FlightTracker_Switch = select,"true","false"
+#!compat_Arguments: Alpenglow_Switch = select,"true","false"; Documents_Switch = select,"true","false"; MoneyWiz_Switch = select,"true","false"; Tripsy_Switch = select,"true","false" ; Currency_Switch = select,"true","false"; ELSA_Switch = select,"true","false"; DailyArt_Switch = select,"true","false"; baimiao_Switch = select,"true","false"; Bloomberg_Switch = select,"true","false"; AppRaven_Switch = select,"true","false"; Xcurrency_Switch = select,"true","false"; FlightTracker_Switch = select,"true","false"
 
 [Script]
 # Alpenglow
@@ -66,6 +54,7 @@ revenuecat = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(s
 
 [MITM]
 hostname = %APPEND% *.pdfexpert.com, firstclass.tripsy.app, api.revenuecat.com, pool.elsanow.io, api.getdailyart.com, baimiao.uzero.cn, mobapi.bloomberg.com, appraven.net, xremit.xcurrency.com, explorer.tratao.com, buy.itunes.apple.com, api.adapty.io, api.rc-backup.com
+
 
 
 
