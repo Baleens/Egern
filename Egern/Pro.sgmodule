@@ -1,35 +1,59 @@
-#!name= Pro-sgmodule
+#!name= Pro
 #!date= 2026/03/05
 #!list= Alpenglow\Documents\MoneyWiz\Tripsy\Currency\ELSA\DailyArt\baimiao\Bloomberg\AppRaven\Xcurrency\FlightTracker\jihe
-#!number= 13
-#!tag= Pro
+#!desc=Manage individual script status (On/Off) via the Module panel. Default is True.
+
+[Argument]
+Alpenglow_Switch = select,"true","false"
+Documents_Switch = select,"true","false"
+MoneyWiz_Switch = select,"true","false"
+Tripsy_Switch = select,"true","false"
+Currency_Switch = select,"true","false"
+ELSA_Switch = select,"true","false"
+DailyArt_Switch = select,"true","false"
+baimiao_Switch = select,"true","false"
+Bloomberg_Switch = select,"true","false"
+AppRaven_Switch = select,"true","false"
+Xcurrency_Switch = select,"true","false"
+FlightTracker_Switch = select,"true","false"
 
 [Script]
-#Alpenglow    
-AlpenglowP = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$, script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/AlpenglowProCrack.js, requires-body=true
-#Documents    
-Documents = type=http-request, pattern=^https?:\/\/license\.pdfexpert\.com\/api\/2.0\/documents\/subscription\/refresh, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Documents.js, requires-body=true
-#MoneyWiz
-MoneyWiz = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js, requires-body=true
-#Tripsy
-Tripsy = type=http-response, pattern=^https?:\/\/firstclass\.tripsy\.app\/api\/v\d\/receipt\/update, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Tripsy.js, requires-body=true
-#Currency
-Currency = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
-Currency = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=true
-#ELSA
-ELSA = type=http-response, pattern=^https?:\/\/pool\.elsanow\.io\/(user\/api\/v\d\/purchase|entitlement\/api\/v\d\/user\/entitlements), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/elsa.js, requires-body=true
-#DailyArt
-DailyArt = type=http-response, pattern=^https?:\/\/api\.getdailyart\.com\/api\/(subscription\/verified|auth\/login|check-logged), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/DailyArt.js, requires-body=true
-#baimiao
-baimiao = type=http-response, pattern=^https?:\/\/baimiao\.uzero\.cn\/api\/.+\/(appLaunchWithUser|getAnnouncement|checkLoginClient), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/baimiao.js, requires-body=true
-#Bloomberg
-Bloomberg = type=http-response, pattern=^https:\/\/mobapi\.bloomberg\.com\/wssmobile\/v1\/user\/subscription, script-path=https://raw.githubusercontent.com/leey668/pyer/main/bloomberg.js, requires-body=true
-#AppRaven
-AppRaven = type=http-response, pattern=^https:\/\/appraven\.net\/appraven\/graphql, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/AppRaven.js, requires-body=true
-#Xcurrency
-Xcurrency = type=http-response, pattern=^https?:\/\/(xremit\.xcurrency|explorer.tratao)\.com\/api\/client\/xtool\/vip, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jijianhuilv.js, requires-body=true
-#FlightTracker
-FlightTracker = type=http-response, pattern=^https?:\/\/api\.adapty\.io\/api\/v\d\/sdk\/(analytics\/profiles|in-apps\/(apple\/receipt\/validate|purchase-containers)|purchase\/app-store), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/adapty.js, requires-body=true
+# Alpenglow
+AlpenglowP = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$, script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/AlpenglowProCrack.js, requires-body=true, argument={{{Alpenglow_Switch}}}
+
+# Documents    
+Documents = type=http-request, pattern=^https?:\/\/license\.pdfexpert\.com\/api\/2.0\/documents\/subscription\/refresh, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Documents.js, requires-body=true, argument={{{Documents_Switch}}}
+
+# MoneyWiz
+MoneyWiz = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js, requires-body=true, argument={{{MoneyWiz_Switch}}}
+
+# Tripsy
+Tripsy = type=http-response, pattern=^https?:\/\/firstclass\.tripsy\.app\/api\/v\d\/receipt\/update, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Tripsy.js, requires-body=true, argument={{{Tripsy_Switch}}}
+
+# Currency
+Currency_Req = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, argument={{{Currency_Switch}}}
+Currency_Res = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=true, argument={{{Currency_Switch}}}
+
+# ELSA
+ELSA = type=http-response, pattern=^https?:\/\/pool\.elsanow\.io\/(user\/api\/v\d\/purchase|entitlement\/api\/v\d\/user\/entitlements), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/elsa.js, requires-body=true, argument={{{ELSA_Switch}}}
+
+# DailyArt
+DailyArt = type=http-response, pattern=^https?:\/\/api\.getdailyart\.com\/api\/(subscription\/verified|auth\/login|check-logged), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/DailyArt.js, requires-body=true, argument={{{DailyArt_Switch}}}
+
+# baimiao
+baimiao = type=http-response, pattern=^https?:\/\/baimiao\.uzero\.cn\/api\/.+\/(appLaunchWithUser|getAnnouncement|checkLoginClient), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/baimiao.js, requires-body=true, argument={{{baimiao_Switch}}}
+
+# Bloomberg
+Bloomberg = type=http-response, pattern=^https:\/\/mobapi\.bloomberg\.com\/wssmobile\/v1\/user\/subscription, script-path=https://raw.githubusercontent.com/leey668/pyer/main/bloomberg.js, requires-body=true, argument={{{Bloomberg_Switch}}}
+
+# AppRaven
+AppRaven = type=http-response, pattern=^https:\/\/appraven\.net\/appraven\/graphql, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/AppRaven.js, requires-body=true, argument={{{AppRaven_Switch}}}
+
+# Xcurrency
+Xcurrency = type=http-response, pattern=^https?:\/\/(xremit\.xcurrency|explorer.tratao)\.com\/api\/client\/xtool\/vip, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jijianhuilv.js, requires-body=true, argument={{{Xcurrency_Switch}}}
+
+# FlightTracker
+FlightTracker = type=http-response, pattern=^https?:\/\/api\.adapty\.io\/api\/v\d\/sdk\/(analytics\/profiles|in-apps\/(apple\/receipt\/validate|purchase-containers)|purchase\/app-store), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/adapty.js, requires-body=true, argument={{{FlightTracker_Switch}}}
 #jihe
 # > Revenuecat 系列解锁合集-1
 Reheji = type=http-response, pattern=^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Revenuecat/JS/JS-1/Reheji.js, requires-body=true, max-size=-1, timeout=60
@@ -43,6 +67,7 @@ revenuecat = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(s
 
 [MITM]
 hostname = %APPEND% *.pdfexpert.com, firstclass.tripsy.app, api.revenuecat.com, pool.elsanow.io, api.getdailyart.com, baimiao.uzero.cn, mobapi.bloomberg.com, appraven.net, xremit.xcurrency.com, explorer.tratao.com, buy.itunes.apple.com, api.adapty.io, api.rc-backup.com
+
 
 
 
