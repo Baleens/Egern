@@ -3,7 +3,7 @@
 #!list= Alpenglow\Documents\MoneyWiz\Tripsy\Currency\ELSA\DailyArt\baimiao\Bloomberg\AppRaven\Xcurrency\FlightTracker\jihe
 #!desc=Manage individual script status (On/Off) via the Module panel. Default is True.
 
-[Argument]
+[Arguments]
 Alpenglow_Switch = select,"true","false"
 Documents_Switch = select,"true","false"
 MoneyWiz_Switch = select,"true","false"
@@ -67,6 +67,7 @@ revenuecat = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(s
 
 [MITM]
 hostname = %APPEND% *.pdfexpert.com, firstclass.tripsy.app, api.revenuecat.com, pool.elsanow.io, api.getdailyart.com, baimiao.uzero.cn, mobapi.bloomberg.com, appraven.net, xremit.xcurrency.com, explorer.tratao.com, buy.itunes.apple.com, api.adapty.io, api.rc-backup.com
+
 
 
 
