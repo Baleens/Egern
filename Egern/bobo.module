@@ -25,7 +25,7 @@ Craft = type=http-response, pattern=^https?:\/\/(api|docs)\.craft\.do\/(api\/)?(
 #Musixmatch
 Musixmatch = type=http-response, pattern=^https?:\/\/apic\.musixmatch\.com\/ws\/1\.1\/config\.get, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Musixmatch/JS/JS-1/Musixmatch.js, requires-body=true
 #xcz
-xcz = type=http-response, pattern=^https?:\/\/lchttpapi\.xczim\.com\/*, script-path=https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/xcz.js, requires-body=true
+xcz = type=http-response, pattern=^https:\/\/lchttpapi\.xczim\.com\/\*$, script-path=https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/xcz.js, requires-body=true
 
 [MITM]
 hostname= %APPEND% api-production.endel.io, mobile.flightradar24.com, gql.reddit.com, gql-fed.reddit.com, scibug.com, api-drive.mypikpak.com, subscription.grammarly.com, isi.csan.goodnotes.com, api.adblockpro.app, api.craft.do, apic.musixmatch.com, lchttpapi.xczim.com
