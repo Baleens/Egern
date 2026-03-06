@@ -3,7 +3,7 @@
 #!list= Alpenglow\Documents\MoneyWiz\Tripsy\Currency\ELSA\DailyArt\baimiao\Bloomberg\AppRaven\Xcurrency\FlightTracker\jihe
 #!desc=Manage individual script status (On/Off) via the Module panel. Default is True.
 
-[Arguments]
+[argument]
 Alpenglow_Switch = select,"true","false"
 Documents_Switch = select,"true","false"
 MoneyWiz_Switch = select,"true","false"
@@ -31,8 +31,8 @@ MoneyWiz = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/veri
 Tripsy = type=http-response, pattern=^https?:\/\/firstclass\.tripsy\.app\/api\/v\d\/receipt\/update, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Tripsy.js, requires-body=true, argument={{{Tripsy_Switch}}}
 
 # Currency
-Currency_Req = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, argument={{{Currency_Switch}}}
-Currency_Res = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=true, argument={{{Currency_Switch}}}
+Currency_Req = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, argument={{{Currency_Switch}}}
+Currency_Res = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=true, argument={{{Currency_Switch}}}
 
 # ELSA
 ELSA = type=http-response, pattern=^https?:\/\/pool\.elsanow\.io\/(user\/api\/v\d\/purchase|entitlement\/api\/v\d\/user\/entitlements), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/elsa.js, requires-body=true, argument={{{ELSA_Switch}}}
@@ -44,10 +44,10 @@ DailyArt = type=http-response, pattern=^https?:\/\/api\.getdailyart\.com\/api\/(
 baimiao = type=http-response, pattern=^https?:\/\/baimiao\.uzero\.cn\/api\/.+\/(appLaunchWithUser|getAnnouncement|checkLoginClient), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/baimiao.js, requires-body=true, argument={{{baimiao_Switch}}}
 
 # Bloomberg
-Bloomberg = type=http-response, pattern=^https:\/\/mobapi\.bloomberg\.com\/wssmobile\/v1\/user\/subscription, script-path=https://raw.githubusercontent.com/leey668/pyer/main/bloomberg.js, requires-body=true, argument={{{Bloomberg_Switch}}}
+Bloomberg = type=http-response, pattern=^https?:\/\/mobapi\.bloomberg\.com\/wssmobile\/v1\/user\/subscription, script-path=https://raw.githubusercontent.com/leey668/pyer/main/bloomberg.js, requires-body=true, argument={{{Bloomberg_Switch}}}
 
 # AppRaven
-AppRaven = type=http-response, pattern=^https:\/\/appraven\.net\/appraven\/graphql, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/AppRaven.js, requires-body=true, argument={{{AppRaven_Switch}}}
+AppRaven = type=http-response, pattern=^https?:\/\/appraven\.net\/appraven\/graphql, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/AppRaven.js, requires-body=true, argument={{{AppRaven_Switch}}}
 
 # Xcurrency
 Xcurrency = type=http-response, pattern=^https?:\/\/(xremit\.xcurrency|explorer.tratao)\.com\/api\/client\/xtool\/vip, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jijianhuilv.js, requires-body=true, argument={{{Xcurrency_Switch}}}
@@ -67,6 +67,7 @@ revenuecat = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(s
 
 [MITM]
 hostname = %APPEND% *.pdfexpert.com, firstclass.tripsy.app, api.revenuecat.com, pool.elsanow.io, api.getdailyart.com, baimiao.uzero.cn, mobapi.bloomberg.com, appraven.net, xremit.xcurrency.com, explorer.tratao.com, buy.itunes.apple.com, api.adapty.io, api.rc-backup.com
+
 
 
 
