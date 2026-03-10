@@ -34,6 +34,20 @@ DOMAIN-SUFFIX,caiyunapp.com
 DOMAIN-SUFFIX,caiyun.com
 DOMAIN-SUFFIX,caiyunai.com
 
+# hema
+DOMAIN-SUFFIX,freshhema.com
+DOMAIN-SUFFIX,hemaapi.cn
+DOMAIN-SUFFIX,hemamax.com
+DOMAIN-SUFFIX,hemaopen.cn
+DOMAIN-SUFFIX,hemaos.com
+DOMAIN-SUFFIX,hemashare.cn
+DOMAIN-SUFFIX,marioall.com
+DOMAIN-SUFFIX,marioin.com
+DOMAIN-SUFFIX,mariowap.com
+DOMAIN-SUFFIX,rexpos.cn
+DOMAIN-SUFFIX,rextech.cn
+DOMAIN-SUFFIX,shyhhema.com
+
 # liulishuo
 DOMAIN-SUFFIX,appsflyer.com
 DOMAIN-SUFFIX,llscdn.com
@@ -254,10 +268,12 @@ DOMAIN-SUFFIX,bankcomm.com.tw
 DOMAIN-SUFFIX,mafengwo.net
 DOMAIN-SUFFIX,mafengwo.com
 DOMAIN-SUFFIX,mafengwo.cn
+DOMAIN-KEYWORD,mafengwo
 
 # fengchao
 DOMAIN-SUFFIX,fcbox.com
 DOMAIN-SUFFIX,fcboxmall.com
+DOMAIN-KEYWORD,fcbox
 
 # cainiao
 DOMAIN-SUFFIX,56che.com
@@ -325,5 +341,6 @@ DOMAIN-SUFFIX,pccwsolutions.com
 DOMAIN-SUFFIX,theclub.com.hk
 DOMAIN-SUFFIX,uhub.com
 DOMAIN-SUFFIX,viu.com
+
 
 
