@@ -1,4 +1,4 @@
-# DNS 直连补充
+# DNS additions
 
 # TestFlight
 DOMAIN-SUFFIX,trackingio.com
@@ -28,6 +28,37 @@ DOMAIN-SUFFIX,yun-hl.3g.qq.com
 # youzheli
 DOMAIN-SUFFIX,tourzj.com
 DOMAIN-SUFFIX,zjwhhly.com
+
+# xiecheng
+DOMAIN-SUFFIX,c-ctrip.com
+DOMAIN-SUFFIX,colinker.com
+DOMAIN-SUFFIX,ctrip.cn
+DOMAIN-SUFFIX,ctrip.co.id
+DOMAIN-SUFFIX,ctrip.co.kr
+DOMAIN-SUFFIX,ctrip.co.th
+DOMAIN-SUFFIX,ctrip.com
+DOMAIN-SUFFIX,ctrip.com.hk
+DOMAIN-SUFFIX,ctrip.my
+DOMAIN-SUFFIX,ctrip.sg
+DOMAIN-SUFFIX,ctripbiz.com
+DOMAIN-SUFFIX,ctripbuy.hk
+DOMAIN-SUFFIX,ctripteam.com
+DOMAIN-SUFFIX,doticloud.com
+DOMAIN-SUFFIX,easytrip.com
+DOMAIN-SUFFIX,hhtravel.com
+DOMAIN-SUFFIX,hhtravel.com.tw
+DOMAIN-SUFFIX,izuchebao.com
+DOMAIN-SUFFIX,lvtds.com
+DOMAIN-SUFFIX,shuntu.cn
+DOMAIN-SUFFIX,skysea.com
+DOMAIN-SUFFIX,suanya.cn
+DOMAIN-SUFFIX,suanya.com
+DOMAIN-SUFFIX,tieyou.com
+DOMAIN-SUFFIX,toptown.cn
+DOMAIN-SUFFIX,toursbms.com
+DOMAIN-SUFFIX,trip.com
+DOMAIN-SUFFIX,tripcdn.com
+DOMAIN-SUFFIX,vipdlt.com
 
 # caiyun weather
 DOMAIN-SUFFIX,caiyunapp.com
@@ -263,6 +294,35 @@ DOMAIN-SUFFIX,bankcomm.com.au
 DOMAIN-SUFFIX,bankcomm.com.mo
 DOMAIN-SUFFIX,bankcomm.com.tw
 
+# CITIC
+DOMAIN-SUFFIX,citic
+DOMAIN-SUFFIX,chinaamc.com
+DOMAIN-SUFFIX,citic-prudential.com.cn
+DOMAIN-SUFFIX,citic.com
+DOMAIN-SUFFIX,citicbank.cn
+DOMAIN-SUFFIX,citicbank.com
+DOMAIN-SUFFIX,citicbank.com.cn
+DOMAIN-SUFFIX,citicbank.net
+DOMAIN-SUFFIX,citicbank.net.cn
+DOMAIN-SUFFIX,citicbank.org
+DOMAIN-SUFFIX,citicbank.org.cn
+DOMAIN-SUFFIX,citiccapital.com
+DOMAIN-SUFFIX,citicgroup.com.cn
+DOMAIN-SUFFIX,citiciam.com
+DOMAIN-SUFFIX,citicifh.com
+DOMAIN-SUFFIX,citicprufunds.com.cn
+DOMAIN-SUFFIX,citics.com
+DOMAIN-SUFFIX,citics.com.hk
+DOMAIN-SUFFIX,citicsf.com
+DOMAIN-SUFFIX,clsa.com
+DOMAIN-SUFFIX,cncbinternational.com
+DOMAIN-SUFFIX,csc108.com
+DOMAIN-SUFFIX,csci.hk
+DOMAIN-SUFFIX,ecitic.com
+DOMAIN-SUFFIX,ecitic.net
+DOMAIN-SUFFIX,group.citic
+DOMAIN-SUFFIX,nic.citic
+
 
 # mafengwo
 DOMAIN-SUFFIX,mafengwo.net
@@ -341,6 +401,7 @@ DOMAIN-SUFFIX,pccwsolutions.com
 DOMAIN-SUFFIX,theclub.com.hk
 DOMAIN-SUFFIX,uhub.com
 DOMAIN-SUFFIX,viu.com
+
 
 
 
