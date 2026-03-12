@@ -3,9 +3,9 @@
 #!auther= @RS0485 由 @keywos进行surge和Loon兼容性修改。
 #!icon= https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/oil.png
 #!arguments= City:填写目标地区（如guangdong/guangzhou）
-#!arguments-desc= 填目标省/城市/区县（区县可选）名称拼音，直辖市请直接填拼音(如chongqing)\n 可去http://m.qiyoujiage.com 找到自己城市后查看网址里自己省份拼音（陕西和山西比较特殊，陕西：shanxi-3，山西：shanxi）。备注：云南、陕西、四川、辽宁、新疆、青海、西藏，贵州、内蒙古、黑龙江各省油价因地而异。
+#!arguments-desc= 填目标地区名称拼音，直辖市请直接填拼音(如chongqing)\n 可去http://m.qiyoujiage.com 找到自己城市后查看网址里自己省份拼音（陕西和山西比较特殊，陕西：shanxi-3，山西：shanxi）\n 备注：云南、陕西、四川、辽宁、新疆、青海、西藏，贵州、内蒙古、黑龙江各省油价因地而异。
 
 [Panel]
-Oil = script-name=Oil, update-interval=86400
+YJ = script-name=YJ, update-interval=86400
 [Script]
-Oil = type=generic, timeout=10, script-path=https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/script/youjia.js,argument={{{City}}}
+YJ = type=generic, timeout=10, script-path=https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/script/youjia.js, argument={{{City}}}
