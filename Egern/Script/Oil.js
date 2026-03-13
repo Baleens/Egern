@@ -3,6 +3,9 @@ export default async function (ctx) {
   const url = `http://m.qiyoujiage.com/${city}.shtml`;
   const CACHE_KEY = "oil_price_cache";
 
+  const family = ctx.widgetFamily ?? "systemSmall";
+  const isSmall = family === "systemSmall";
+
   let cityName = city;
   let p92 = "--";
   let p95 = "--";
@@ -23,18 +26,27 @@ export default async function (ctx) {
     const nameMatch = html.match(/<title>([^今<]{2,12})今日油价/);
     if (nameMatch) cityName = nameMatch[1];
 
-    p92 = extract("92汽油");
-    p95 = extract("95汽油");
-    p98 = extract("98汽油");
+    p92 = extract("92号汽油");
+    p95 = extract("95号汽油");
+    p98 = extract("98号汽油");
     p0 = extract("0号柴油");
 
     const dateMatch = html.match(/(\d{4}年\d{1,2}月\d{1,2}日)/);
     if (dateMatch) updateDate = dateMatch[1];
 
-    ctx.storage.setJSON(CACHE_KEY, { cityName, p92, p95, p98, p0, updateDate });
+    ctx.storage.setJSON(CACHE_KEY, {
+      cityName,
+      p92,
+      p95,
+      p98,
+      p0,
+      updateDate
+    });
+
+    const notifyCity = /[\u4e00-\u9fa5]/.test(cityName) ? cityName : "目标地区";
 
     ctx.notify({
-      title: `⛽ 今日油价`,
+      title: `⛽ ${notifyCity}今日油价`,
       subtitle: updateDate,
       body: `92# ¥${p92} / 95# ¥${p95} / 98# ¥${p98} / 柴油 ¥${p0}`,
       sound: false,
@@ -59,11 +71,46 @@ export default async function (ctx) {
     }
   }
 
+  if (isSmall) {
+    return {
+      type: "widget",
+      backgroundColor: "#0F0F14",
+      padding: 16,
+      gap: 8,
+      children: [
+        {
+          type: "text",
+          text: `⛽ ${cityName}`,
+          font: { size: "headline", weight: "bold" },
+          textColor: "#FFD60A"
+        },
+        {
+          type: "text",
+          text: "92号汽油",
+          font: { size: "caption1", weight: "semibold" },
+          textColor: "#FFFFFFB3"
+        },
+        {
+          type: "text",
+          text: `¥${p92}/L`,
+          font: { size: "title2", weight: "bold" },
+          textColor: "#FFFFFF"
+        },
+        {
+          type: "text",
+          text: fromCache ? `${updateDate}（缓存）` : updateDate,
+          font: { size: "caption2" },
+          textColor: "#FFFFFF66"
+        }
+      ]
+    };
+  }
+
   return {
     type: "widget",
     backgroundColor: "#0F0F14",
     padding: 16,
-    gap: 6,
+    gap: 10,
     children: [
       {
         type: "text",
@@ -73,25 +120,25 @@ export default async function (ctx) {
       },
       {
         type: "text",
-        text: `92# 汽油：¥${p92}`,
+        text: `92号汽油：¥${p92}/L`,
         font: { size: "body" },
         textColor: "#FFFFFF"
       },
       {
         type: "text",
-        text: `95# 汽油：¥${p95}`,
+        text: `95号汽油：¥${p95}/L`,
         font: { size: "body" },
         textColor: "#FFFFFF"
       },
       {
         type: "text",
-        text: `98# 汽油：¥${p98}`,
+        text: `98号汽油：¥${p98}/L`,
         font: { size: "body" },
         textColor: "#FFFFFF"
       },
       {
         type: "text",
-        text: `0# 柴油：¥${p0}`,
+        text: `0号柴油：¥${p0}/L`,
         font: { size: "body" },
         textColor: "#FFFFFF"
       },
@@ -99,7 +146,7 @@ export default async function (ctx) {
         type: "text",
         text: fromCache ? `${updateDate}（缓存）` : updateDate,
         font: { size: "caption2" },
-        textColor: "#FFFFFF80"
+        textColor: "#FFFFFF66"
       }
     ]
   };
