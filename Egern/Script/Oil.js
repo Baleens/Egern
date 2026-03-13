@@ -1,75 +1,148 @@
 export default async function (ctx) {
-  const city = ctx.env.City || "guangdong";
-  const url = `http://m.qiyoujiage.com/api/price/${city}`;
+  const city = (ctx.env.City || "guangdong").trim().toLowerCase();
+  const url = `http://m.qiyoujiage.com/${city}.shtml`;
 
-  let title = "⛽ 油价";
-  let lines = [];
+  // Helper: parse price from HTML text like "7.45元/升"
+  function parsePrice(html, label) {
+    const re = new RegExp(label + '[^\\d]*(\\d+\\.\\d+)');
+    const m = html.match(re);
+    return m ? m[1] : "--";
+  }
+
+  let cityName = city;
+  let p92 = "--", p95 = "--", p98 = "--", p0 = "--", updateDate = "";
 
   try {
     const resp = await ctx.http.get(url, { timeout: 10000 });
-    const text = await resp.text();
-    const data = JSON.parse(text);
+    const html = await resp.text();
 
-    // qiyoujiage.com returns an object with 92/95/98/0# fields
-    const p92  = data["92"]  || data.p92  || "--";
-    const p95  = data["95"]  || data.p95  || "--";
-    const p98  = data["98"]  || data.p98  || "--";
-    const p0   = data["0"]   || data.p0   || "--";
-    const city_name = data.city || data.name || city;
-    const date = data.date || "";
+    // Extract city name
+    const nameMatch = html.match(/<title>([^<]{2,10})油价/);
+    if (nameMatch) cityName = nameMatch[1];
 
-    title = `⛽ ${city_name} 油价`;
+    // Extract prices from HTML
+    p92  = parsePrice(html, "92号汽油");
+    p95  = parsePrice(html, "95号汽油");
+    p98  = parsePrice(html, "98号汽油");
+    p0   = parsePrice(html, "0号柴油");
 
-    lines = [
-      { label: "🟡 92#", value: `¥${p92}/L` },
-      { label: "🔵 95#", value: `¥${p95}/L` },
-      { label: "🔴 98#", value: `¥${p98}/L` },
-      { label: "⚫ 0# 柴油", value: `¥${p0}/L` },
-    ];
+    // Extract update date
+    const dateMatch = html.match(/(\d{4}年\d{1,2}月\d{1,2}日)/);
+    if (dateMatch) updateDate = dateMatch[1];
 
-    if (date) lines.push({ label: "📅 更新", value: date });
+    // Cache result
+    ctx.storage.setJSON("oil_cache", { cityName, p92, p95, p98, p0, updateDate, ts: Date.now() });
 
     ctx.notify({
-      title: title,
-      body: `92#: ¥${p92}  95#: ¥${p95}  98#: ¥${p98}`,
+      title: `⛽ ${cityName}今日油价`,
+      subtitle: updateDate,
+      body: `92#: ¥${p92}  95#: ¥${p95}  98#: ¥${p98}  柴油: ¥${p0}`,
+      sound: false,
+      action: { type: "openUrl", url: url },
     });
 
   } catch (e) {
-    lines = [{ label: "❌ 错误", value: "获取油价失败，请检查城市拼音" }];
+    // Fallback to cache on network error
+    const cache = ctx.storage.getJSON("oil_cache");
+    if (cache) {
+      cityName  = cache.cityName;
+      p92       = cache.p92;
+      p95       = cache.p95;
+      p98       = cache.p98;
+      p0        = cache.p0;
+      updateDate = cache.updateDate + " (缓存)";
+    } else {
+      cityName = "获取失败";
+    }
   }
 
-  // Widget layout for iOS home screen
+  const family = ctx.widgetFamily || "systemSmall";
+  const isSmall = family === "systemSmall";
+
+  // ---- Widget layout ----
   return {
     type: "widget",
-    backgroundColor: "#1C1C1E",
-    padding: 14,
-    gap: 6,
+    backgroundColor: "#0F0F14",
+    padding: isSmall ? 12 : 16,
+    gap: isSmall ? 4 : 8,
     children: [
+      // Title row
       {
-        type: "text",
-        text: title,
-        font: { size: "headline", weight: "bold" },
-        textColor: "#FFD60A",
-      },
-      ...lines.map(line => ({
         type: "hstack",
         gap: 4,
         children: [
           {
             type: "text",
-            text: line.label,
-            font: { size: "body" },
-            textColor: "#EBEBF5CC",
+            text: "⛽",
+            font: { size: isSmall ? "subheadline" : "headline" },
+          },
+          {
+            type: "text",
+            text: `${cityName} 油价`,
+            font: { size: isSmall ? "subheadline" : "headline", weight: "bold" },
+            textColor: "#FFD60A",
+            lineLimit: 1,
+          },
+        ],
+      },
+      // Divider
+      {
+        type: "text",
+        text: "─────────────",
+        font: { size: "caption2" },
+        textColor: "#FFFFFF30",
+      },
+      // Price rows
+      ...[ 
+        { label: "🟡 92#", value: p92 },
+        { label: "🔵 95#", value: p95 },
+        ...(isSmall ? [] : [
+          { label: "🔴 98#", value: p98 },
+          { label: "⚫ 柴油 0#", value: p0 },
+        ]),
+      ].map(row => ({
+        type: "hstack",
+        gap: 4,
+        children: [
+          {
+            type: "text",
+            text: row.label,
+            font: { size: isSmall ? "footnote" : "body" },
+            textColor: "#EBEBF599",
             flex: 1,
           },
           {
             type: "text",
-            text: line.value,
-            font: { size: "body", weight: "semibold" },
+            text: `¥${row.value}`,
+            font: { size: isSmall ? "footnote" : "body", weight: "semibold" },
             textColor: "#FFFFFF",
           },
         ],
       })),
+      // Show all 4 grades in small via compact second row
+      ...(isSmall ? [{
+        type: "hstack",
+        gap: 4,
+        children: [
+          { type: "text", text: "🔴 98#", font: { size: "footnote" }, textColor: "#EBEBF599", flex: 1 },
+          { type: "text", text: `¥${p98}`, font: { size: "footnote", weight: "semibold" }, textColor: "#FFFFFF" },
+        ],
+      },
+      {
+        type: "hstack",
+        gap: 4,
+        children: [
+          { type: "text", text: "⚫ 柴油", font: { size: "footnote" }, textColor: "#EBEBF599", flex: 1 },
+          { type: "text", text: `¥${p0}`, font: { size: "footnote", weight: "semibold" }, textColor: "#FFFFFF" },
+        ],
+      }] : []),
+      // Footer date
+      {
+        type: "text",
+        text: updateDate || "─",
+        font: { size: "caption2" },
+        textColor: "#FFFFFF50",
+      },
     ],
   };
 }
