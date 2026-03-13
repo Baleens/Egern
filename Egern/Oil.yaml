@@ -5,24 +5,21 @@ author: "@RS0485 由 @keywos 进行 Surge 和 Loon 兼容性修改"
 icon: "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/oil.png"
 
 compat_arguments:
-  City: "guangdong"
+  城市: "上海"
 
 compat_arguments_desc: >
-  填目标地区名称拼音，直辖市请直接填拼音（如 chongqing）
-  可去 http://m.qiyoujiage.com 找到所在城市后，查看地址拼音
-  陕西和山西比较特殊：陕西 shanxi-3，山西 shanxi
-  备注：云南、陕西、四川、辽宁、新疆、青海、西藏、贵州、内蒙古、黑龙江各省油价因地而异
+  填目标地区城市中文名称
 
 scriptings:
   - generic:
       name: "oil-price"
       script_url: "https://raw.githubusercontent.com/Baleens/Egern/main/Egern/Script/Oil.js"
-      timeout: 30
+      timeout: 10
       update_interval: 86400
       env:
-        City: "{{{City}}}"
+        城市: "{{{城市}}}"
 
 widgets:
   - name: "oil-price"
     env:
-      City: "{{{City}}}"
+      城市: "{{{城市}}}"
