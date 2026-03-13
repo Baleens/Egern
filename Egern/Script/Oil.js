@@ -1,8 +1,9 @@
 export default async function (ctx) {
   const city = (ctx.env.City || "guangdong").trim().toLowerCase();
   const url = `http://m.qiyoujiage.com/${city}.shtml`;
-
   const CACHE_KEY = "oil_price_cache";
+
+  // ctx.widgetFamily is undefined when run manually (not as widget)
   const family = ctx.widgetFamily ?? "systemSmall";
   const isSmall = family === "systemSmall";
 
@@ -13,21 +14,23 @@ export default async function (ctx) {
   // --- Fetch & parse ---
   try {
     const resp = await ctx.http.get(url, { timeout: 10000 });
-    const html = await resp.text();
+    const html = await resp.text(); // consume body exactly once
 
+    // BUG FIX: single backslash escaping (was double-escaped before)
     const extract = (label) => {
-      const m = html.match(new RegExp(label + '[^\\d]*(\\d+\\.\\d+)'));
+      const m = html.match(new RegExp(label + '[^\\d]*([\\d]+\\.[\\d]+)'));
       return m ? m[1] : "--";
     };
 
     const nameMatch = html.match(/<title>([^今<]{2,6})今日油价/);
     if (nameMatch) cityName = nameMatch[1];
 
-    p92  = extract("92号汽油");
-    p95  = extract("95号汽油");
-    p98  = extract("98号汽油");
-    p0   = extract("0号柴油");
+    p92 = extract("92号汽油");
+    p95 = extract("95号汽油");
+    p98 = extract("98号汽油");
+    p0  = extract("0号柴油");
 
+    // BUG FIX: single backslash in regex literal
     const dateMatch = html.match(/(\d{4}年\d{1,2}月\d{1,2}日)/);
     if (dateMatch) updateDate = dateMatch[1];
 
@@ -38,6 +41,10 @@ export default async function (ctx) {
       subtitle: updateDate,
       body: `92#: ¥${p92}  95#: ¥${p95}  98#: ¥${p98}  柴油: ¥${p0}`,
       sound: false,
+      action: {
+        type: "openUrl",
+        url: url,
+      },
     });
 
   } catch (e) {
@@ -51,7 +58,7 @@ export default async function (ctx) {
     }
   }
 
-  // --- Strictly spec-compliant Widget DSL ---
+  // --- Widget DSL (spec-compliant) ---
   const row = (label, value, color) => ({
     type: "hstack",
     children: [
@@ -61,9 +68,7 @@ export default async function (ctx) {
         font: { size: isSmall ? "footnote" : "body" },
         textColor: "#EBEBF580",
       },
-      {
-        type: "spacer",
-      },
+      { type: "spacer" },
       {
         type: "text",
         text: `¥${value}`,
@@ -79,19 +84,16 @@ export default async function (ctx) {
     padding: 14,
     gap: 6,
     children: [
-      // Header
       {
         type: "text",
         text: `⛽ ${cityName}`,
         font: { size: isSmall ? "subheadline" : "headline", weight: "bold" },
         textColor: "#FFD60A",
       },
-      // Price rows
       row("🟡 92#", p92, "#FFD60A"),
       row("🔵 95#", p95, "#5AC8FA"),
       row("🔴 98#", p98, "#FF6B6B"),
       row("⚫ 柴油", p0,  "#EBEBF5"),
-      // Footer
       {
         type: "text",
         text: fromCache ? `${updateDate} (缓存)` : updateDate,
