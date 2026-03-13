@@ -16,7 +16,7 @@ compat_arguments_desc: >
 scriptings:
   - generic:
       name: "oil-price"
-      script_url: "https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/script/youjia.js"
+      script_url: "https://raw.githubusercontent.com/Baleens/Egern/refs/heads/main/Egern/Script/Oil.js"
       timeout: 10
       update_interval: 86400
       env:
