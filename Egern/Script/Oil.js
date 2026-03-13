@@ -23,9 +23,9 @@ export default async function (ctx) {
     const nameMatch = html.match(/<title>([^今<]{2,12})今日油价/);
     if (nameMatch) cityName = nameMatch[1];
 
-    p92 = extract("92号汽油");
-    p95 = extract("95号汽油");
-    p98 = extract("98号汽油");
+    p92 = extract("92汽油");
+    p95 = extract("95汽油");
+    p98 = extract("98汽油");
     p0 = extract("0号柴油");
 
     const dateMatch = html.match(/(\d{4}年\d{1,2}月\d{1,2}日)/);
@@ -34,13 +34,15 @@ export default async function (ctx) {
     ctx.storage.setJSON(CACHE_KEY, { cityName, p92, p95, p98, p0, updateDate });
 
     ctx.notify({
-      title: `⛽ ${/[\u4e00-\u9fa5]/.test(cityName) ? cityName : "目标地区"}今日油价`,
+      title: `⛽ 今日油价`,
       subtitle: updateDate,
-      body: `92#: ¥${p92}  95#: ¥${p95}  98#: ¥${p98}  柴油: ¥${p0}`,
+      body: `92# ¥${p92} / 95# ¥${p95} / 98# ¥${p98} / 柴油 ¥${p0}`,
       sound: false,
-      action: { type: "openUrl", url }
+      action: {
+        type: "openUrl",
+        url: url
+      }
     });
-    
   } catch (e) {
     const cache = ctx.storage.getJSON(CACHE_KEY);
     if (cache) {
