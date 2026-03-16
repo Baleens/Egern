@@ -111,6 +111,11 @@ DOMAIN-SUFFIX,wuyou189.com
 DOMAIN-SUFFIX,ycy100.cn
 DOMAIN-SUFFIX,yichuangyun.com.cn
 
+#Bark
+DOMAIN,api.day.app
+DOMAIN,bark.day.app
+DOMAIN-SUFFIX,day.app
+
 #Bank
 #ABC
 DOMAIN-SUFFIX,95599.cn
