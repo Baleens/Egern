@@ -1,5 +1,10 @@
 #DNS rule of additions
 
+#0
+DOMAIN-SUFFIX,rc-backup.com
+DOMAIN-SUFFIX,revenuecat.com
+
+
 #10086
 DOMAIN-SUFFIX,10086kuaixiu.com
 DOMAIN-SUFFIX,12530.com
@@ -543,6 +548,31 @@ DOMAIN-SUFFIX,rexpos.cn
 DOMAIN-SUFFIX,rextech.cn
 DOMAIN-SUFFIX,shyhhema.com
 
+#icity
+DOMAIN,icity-static.icitycdn.com
+DOMAIN-SUFFIX,icitycdn.com
+
+#jinshanyun
+DOMAIN-SUFFIX,kingcloud.com
+DOMAIN-SUFFIX,kingsoft-office-service.com
+DOMAIN-SUFFIX,ks-cdn.com
+DOMAIN-SUFFIX,ks-cdnv6.com
+DOMAIN-SUFFIX,kscbigdata.cloud
+DOMAIN-SUFFIX,ksycdn.cn
+DOMAIN-SUFFIX,ksyna.com
+DOMAIN-SUFFIX,ksyun.com
+DOMAIN-SUFFIX,ksyun.net
+DOMAIN-SUFFIX,ksyuncdn-k2.com
+DOMAIN-SUFFIX,ksyuncdnv6.com
+DOMAIN-SUFFIX,ksyuncs.com
+DOMAIN-SUFFIX,ksyungslb.com
+DOMAIN-SUFFIX,ksyungslb2.com
+DOMAIN-SUFFIX,ksyunv6.com
+DOMAIN-SUFFIX,ksyunv7.com
+DOMAIN-SUFFIX,ksyunwaf.com
+DOMAIN-SUFFIX,springen.cn
+
+
 #liulishuo
 DOMAIN-SUFFIX,appsflyer.com
 DOMAIN-SUFFIX,llscdn.com
@@ -710,6 +740,23 @@ DOMAIN-SUFFIX,yitao.com
 DOMAIN-SUFFIX,ztcexam.com
 DOMAIN-SUFFIX,zuodao.com
 
+#youmeng
+DOMAIN-SUFFIX,mobmore.com
+DOMAIN-SUFFIX,um0.cn
+DOMAIN-SUFFIX,um1.cn
+DOMAIN-SUFFIX,umeng.com
+DOMAIN-SUFFIX,umengcloud.com
+DOMAIN-SUFFIX,umsns.com
+DOMAIN-SUFFIX,umtrack.com
+DOMAIN-SUFFIX,umtrack0.com
+DOMAIN-SUFFIX,umtrack1.com
+DOMAIN-SUFFIX,umtrack2.com
+DOMAIN-SUFFIX,umv0.com
+DOMAIN-SUFFIX,umv5.com
+DOMAIN-SUFFIX,uyunad.com
+DOMAIN-SUFFIX,whalecloud.com
+DOMAIN-SUFFIX,wrating.com
+
 #WeChat
 DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
 DOMAIN,dldir1.qq.com
@@ -797,9 +844,14 @@ DOMAIN-SUFFIX,zjwhhly.com
 
 #z
 DOMAIN,cdn.ampproject.org
+DOMAIN-SUFFIX,2q10.com
+DOMAIN,app-analytics-services.com
+DOMAIN,app-measurement-cn.com
+DOMAIN,app-measurement.com
 DOMAIN-SUFFIX,ahdohpiechei.com
+DOMAIN-SUFFIX,eudic.net
 DOMAIN-SUFFIX,jijinhao.com
 DOMAIN-SUFFIX,tratao.com
-DOMAIN-SUFFIX,2q10.com
+
 
 
