@@ -753,6 +753,10 @@ DOMAIN-SUFFIX,yitao.com
 DOMAIN-SUFFIX,ztcexam.com
 DOMAIN-SUFFIX,zuodao.com
 
+#TMDB
+DOMAIN-SUFFIX,themoviedb.org
+DOMAIN-SUFFIX,tmdb.org
+
 #youmeng
 DOMAIN-SUFFIX,mobmore.com
 DOMAIN-SUFFIX,um0.cn
@@ -783,6 +787,10 @@ DOMAIN-SUFFIX,lbs.gtimg.com
 DOMAIN-SUFFIX,map.qq.com
 DOMAIN-SUFFIX,servicewechat.com
 DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,tencentcos.cloud
+DOMAIN-SUFFIX,tencentcos.com
+DOMAIN-SUFFIX,tencentcos.net
+DOMAIN-SUFFIX,tencentcs.com
 DOMAIN-SUFFIX,up-hl.3g.qq.com
 DOMAIN-SUFFIX,vweixinthumb.tc.qq.com
 DOMAIN-SUFFIX,wechat.com
