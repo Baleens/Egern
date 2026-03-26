@@ -5,6 +5,7 @@ DOMAIN-SUFFIX,rc-backup.com
 DOMAIN-SUFFIX,revenuecat.com
 DOMAIN-SUFFIX,ingest.sentry.io
 DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,offerpluscn.com
 
 
 #10086
@@ -828,6 +829,12 @@ DOMAIN-SUFFIX,meituan.net
 DOMAIN-SUFFIX,mtyun.com
 DOMAIN-SUFFIX,neixin.cn
 DOMAIN-SUFFIX,sankuai.com
+
+#MicroSoft
+DOMAIN-SUFFIX,microsoftonline.com
+DOMAIN-SUFFIX,microsoftonline-p.com
+DOMAIN-SUFFIX,microsoftonline-p.net
+DOMAIN-SUFFIX,microsoftol.com
 
 #PCCW
 DOMAIN-SUFFIX,1010.com.hk
