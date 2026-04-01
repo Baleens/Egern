@@ -335,7 +335,13 @@ DOMAIN-SUFFIX,icbkus.com
 DOMAIN-SUFFIX,95580.net
 DOMAIN-SUFFIX,psbc.com
 DOMAIN-SUFFIX,psbcoa.com.cn
-
+#HSBC
+DOMAIN-SUFFIX,hsbc.com.hk
+DOMAIN-SUFFIX,com.hk
+DOMAIN-SUFFIX,hk
+#AMEX
+DOMAIN-SUFFIX,amexpressnetwork.com
+DOMAIN-SUFFIX,expresscompanynetwork.com
 
 #bilibili
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com
@@ -861,6 +867,11 @@ DOMAIN-SUFFIX,pccwsolutions.com
 DOMAIN-SUFFIX,theclub.com.hk
 DOMAIN-SUFFIX,uhub.com
 DOMAIN-SUFFIX,viu.com
+
+#PDD
+DOMAIN-SUFFIX,pddpic.com
+DOMAIN-SUFFIX,pinduoduo.com
+DOMAIN-SUFFIX,yangkeduo.com
 
 #shunfeng
 DOMAIN-SUFFIX,feng1.com
