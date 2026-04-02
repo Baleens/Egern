@@ -1001,6 +1001,11 @@ DOMAIN-SUFFIX,yitao.com
 DOMAIN-SUFFIX,ztcexam.com
 DOMAIN-SUFFIX,zuodao.com
 
+#tastien
+DOMAIN-SUFFIX,tastientech.com
+DOMAIN-SUFFIX,tastien-external.com
+
+
 #TMDB
 DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,tmdb.org
