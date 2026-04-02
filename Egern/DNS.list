@@ -827,6 +827,10 @@ DOMAIN-SUFFIX,mafengwo.com
 DOMAIN-SUFFIX,mafengwo.cn
 DOMAIN-KEYWORD,mafengwo
 
+#manmanbuy
+DOMAIN-SUFFIX,manmanbuy.com
+DOMAIN-SUFFIX,manmankan.com
+
 #meituan
 DOMAIN-SUFFIX,dianping.com
 DOMAIN-SUFFIX,maoyan.com
