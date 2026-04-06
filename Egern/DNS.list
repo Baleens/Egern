@@ -339,6 +339,11 @@ DOMAIN-SUFFIX,psbcoa.com.cn
 DOMAIN-SUFFIX,hsbc.com.hk
 DOMAIN-SUFFIX,com.hk
 DOMAIN-SUFFIX,hk
+#ZA
+DOMAIN-SUFFIX,za.group
+DOMAIN-SUFFIX,zaticdn.com
+DOMAIN-SUFFIX,zajourney.com
+DOMAIN-SUFFIX,zafinsvc.com
 #AMEX
 DOMAIN-SUFFIX,amexpressnetwork.com
 DOMAIN-SUFFIX,expresscompanynetwork.com
