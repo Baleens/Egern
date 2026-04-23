@@ -6,6 +6,7 @@ DOMAIN-SUFFIX,revenuecat.com
 DOMAIN-SUFFIX,ingest.sentry.io
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,offerpluscn.com
+DOMAIN-SUFFIX,yirujs.com
 
 
 #10086
@@ -818,6 +819,11 @@ DOMAIN-SUFFIX,ksyunv6.com
 DOMAIN-SUFFIX,ksyunv7.com
 DOMAIN-SUFFIX,ksyunwaf.com
 DOMAIN-SUFFIX,springen.cn
+
+#liepin
+DOMAIN-SUFFIX,liepin.com
+DOMAIN-SUFFIX,lietou.com
+DOMAIN-SUFFIX,lietou-static.com
 
 #liulishuo
 DOMAIN-SUFFIX,appsflyer.com
