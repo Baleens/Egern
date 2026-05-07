@@ -7,6 +7,11 @@ DOMAIN-SUFFIX,ingest.sentry.io
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,offerpluscn.com
 DOMAIN-SUFFIX,yirujs.com
+DOMAIN-SUFFIX,dataesb.com
+DOMAIN-SUFFIX,data380.com
+DOMAIN-SUFFIX,jieshu.me
+DOMAIN-SUFFIX,bookuu.com
+DOMAIN-SUFFIX,wenyouyun.com
 
 
 #10086
@@ -1076,6 +1081,12 @@ DOMAIN-SUFFIX,wx.qq.com
 DOMAIN-SUFFIX,wxapp.tc.qq.com
 DOMAIN-SUFFIX,wxs.qq.com
 DOMAIN-SUFFIX,yun-hl.3g.qq.com
+
+#wenxuan
+DOMAIN-SUFFIX,winxuan.com
+DOMAIN-SUFFIX,winxuancdn.com
+DOMAIN-SUFFIX,welan.com
+DOMAIN-SUFFIX,winyoungreading.com
 
 #xiecheng
 DOMAIN-SUFFIX,c-ctrip.com
