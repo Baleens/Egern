@@ -13,6 +13,7 @@ DOMAIN-SUFFIX,jieshu.me
 DOMAIN-SUFFIX,bookuu.com
 DOMAIN-SUFFIX,wenyouyun.com
 DOMAIN-SUFFIX,yundzh.com
+DOMAIN-SUFFIX,cnzz.com
 
 #10086
 DOMAIN-SUFFIX,10086kuaixiu.com
@@ -903,6 +904,10 @@ DOMAIN-SUFFIX,ksyunv6.com
 DOMAIN-SUFFIX,ksyunv7.com
 DOMAIN-SUFFIX,ksyunwaf.com
 DOMAIN-SUFFIX,springen.cn
+
+#keyun
+DOMAIN,wx.cyjtgs.com
+DOMAIN-SUFFIX,cyjtgs.com
 
 #liepin
 DOMAIN-SUFFIX,liepin.com
