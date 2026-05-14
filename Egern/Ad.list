@@ -1,6 +1,7 @@
 #Credit:https://github.com/pmkol/easymosdns/tree/rules
 #info:Block ad list
 
+DOMAIN-SUFFIX,puata.info
 DOMAIN-SUFFIX,0n.click
 DOMAIN-SUFFIX,0x01n2ptpuz3.com
 DOMAIN-SUFFIX,0xon2uo9s.com
