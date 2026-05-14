@@ -1,6 +1,6 @@
-name: bobo
-description: Boost for Apps:Endel/Flightradar24/Reddit/Symbolab/PikPak/Grammarly/GoodNote6/AdblockPro/Craft/Musixmatch/xcz
-icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Crocodile_10.png
+#!name: bobo
+#!description: Boost for Apps:Endel/Flightradar24/Reddit/Symbolab/PikPak/Grammarly/GoodNote6/AdblockPro/Craft/Musixmatch/xcz
+#!icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Crocodile_10.png
 
 [Script]
 #Endel
