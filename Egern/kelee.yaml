@@ -2,7 +2,6 @@ name: 可莉Loon插件toEgern
 description: 支持可莉插件中心的插件给Egern使用; 非Loon用户切勿反馈插件任何问题，尊重原创; 使用前请先添加ScriptHub模块。
 author: @iKeLee @158212892 @IBL3ND
 homepage: https://hub.kelee.one/ https://loonlab.103516.xyz/Plugin/
-icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/menhera/Sticker_1156.png
 
 body_rewrites:
   - response_regex:
