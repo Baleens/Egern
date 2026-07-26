@@ -26,6 +26,10 @@ DOMAIN-SUFFIX,cj8.ren
 DOMAIN,wkmp2.tingyun.com
 DOMAIN-SUFFIX,tingyun.com
 
+#weather
+DOMAIN,wwc.bjzkzm.com
+DOMAIN-SUFFIX,bjzkzm.com
+
 #liabrary
 DOMAIN,s9.cnzz.com
 DOMAIN-SUFFIX,cnzz.com
