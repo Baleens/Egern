@@ -1,7 +1,7 @@
 #!name=Pro
-#!desc=Alpenglow\Documents\MoneyWiz\Tripsy\Currency\ELSA\DailyArt\baimiao\Bloomberg\AppRaven\Xcurrency\FlightTracker\jihe
+#!desc=Alpenglow\Documents\MoneyWiz\Tripsy\Currency\ELSA\DailyArt\baimiao\Bloomberg\AppRaven\Xcurrency\FlightTracker\iTranslate\jihe
 #icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Nike.png
-
+  
 [Script]
 
 # Alpenglow
@@ -24,7 +24,7 @@ Currency_Res = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/.+\
 ELSA = type=http-response, pattern=^https?:\/\/pool\.elsanow\.io\/(user\/api\/v\d\/purchase|entitlement\/api\/v\d\/user\/entitlements), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/elsa.js, requires-body=true
 
 # DailyArt
-DailyArt = type=http-response, pattern=^https?:\/\/api\.getdailyart\.com\/api\/(subscription\/verified|auth\/login|check-logged), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/DailyArt.js, requires-body=true
+DailyArt = type=http-response, pattern=^https?:\/\/api\.getdailyart\.com\/api\/(subscription\/verified|auth\/login|check-logged), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/DailyArt.js, requires-body=true, max-size=-1, timeout=60
 
 # baimiao
 baimiao = type=http-response, pattern=^https?:\/\/baimiao\.uzero\.cn\/api\/.+\/(appLaunchWithUser|getAnnouncement|checkLoginClient), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/baimiao.js, requires-body=true
@@ -40,7 +40,14 @@ Xcurrency = type=http-response, pattern=^https?:\/\/(xremit\.xcurrency|explorer.
 
 # FlightTracker
 FlightTracker = type=http-response, pattern=^https?:\/\/api\.adapty\.io\/api\/v\d\/sdk\/(analytics\/profiles|in-apps\/(apple\/receipt\/validate|purchase-containers)|purchase\/app-store), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/adapty.js, requires-body=true
+
+#iTranslate
+itranslate = type=http-response, pattern=^https?:\/\/ssl-api\.itranslateapp\.com\/accounts\/.+\/(subscriptions\/verify|marketing\/consent\/status), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/itranslate.js, requires-body=true, max-size=-1, timeout=60
+
 #jihe
+# chxm1023
+chxm = type=http-request, pattern=^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, timeout=60
+chxm = type=http-response, pattern=^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=true, max-size=-1, timeout=60
 # > Revenuecat 系列解锁合集-1
 Reheji = type=http-response, pattern=^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Revenuecat/JS/JS-1/Reheji.js, requires-body=true, max-size=-1, timeout=60
 Reheji = type=http-request, pattern=^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Revenuecat/JS/JS-1/Reheji.js, timeout=60
@@ -52,9 +59,7 @@ revenuecat = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(
 revenuecat = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Revenuecat/JS/JS-3/Revenuecat.js, timeout=60
 
 [MITM]
-hostname = %APPEND% *.pdfexpert.com, firstclass.tripsy.app, api.revenuecat.com, pool.elsanow.io, api.getdailyart.com, baimiao.uzero.cn, mobapi.bloomberg.com, appraven.net, xremit.xcurrency.com, explorer.tratao.com, buy.itunes.apple.com, api.adapty.io, api.rc-backup.com
-
-
+hostname = %APPEND% *.pdfexpert.com, firstclass.tripsy.app, api.revenuecat.com, pool.elsanow.io, api.getdailyart.com, baimiao.uzero.cn, mobapi.bloomberg.com, appraven.net, xremit.xcurrency.com, explorer.tratao.com, buy.itunes.apple.com, api.adapty.io, api.rc-backup.com, ssl-api.itranslateapp.com
 
 
 
