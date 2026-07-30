@@ -124,6 +124,9 @@ DOMAIN-SUFFIX,hkcsl.com
 DOMAIN-KEYWORD,clubsim
 DOMAIN-KEYWORD,hkcsl
 
+#cuniq hk
+DOMAIN-SUFFIX,cuniq.com
+
 #PCCW
 DOMAIN-SUFFIX,1010.com.hk
 DOMAIN-SUFFIX,d1k2us671qcoau.cloudfront.net
