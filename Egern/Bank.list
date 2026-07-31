@@ -126,6 +126,8 @@ DOMAIN-KEYWORD,hkcsl
 
 #cuniq hk
 DOMAIN-SUFFIX,cuniq.com
+DOMAIN-SUFFIX,cuniq.comundefined
+DOMAIN-KEYWORD,cuniq
 
 #PCCW
 DOMAIN-SUFFIX,1010.com.hk
