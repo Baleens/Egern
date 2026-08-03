@@ -1,0 +1,18 @@
+# 地区检测
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+
+# VOXI
+DOMAIN,vfgb.idemia.io
+IP-CIDR,148.252.160.0/19,no-resolve
+
+# CMLinkUK EE
+IP-CIDR,46.68.0.0/17,no-resolve
+
+# Giffgaff
+DOMAIN-SUFFIX,giffgaff.com
+DOMAIN-KEYWORD,giffgaff
+IP-CIDR,87.194.0.0/16,no-resolve
+
+# CTE
+DOMAIN-SUFFIX,ct.ee.co.uk
+IP-CIDR,31.94.0.0/16,no-resolve
