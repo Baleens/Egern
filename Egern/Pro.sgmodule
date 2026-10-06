@@ -1,5 +1,5 @@
 #!name=Pro
-#!desc=Alpenglow\Documents\MoneyWiz\Tripsy\Currency\ELSA\DailyArt\baimiao\Bloomberg\AppRaven\Xcurrency\FlightTracker\iTranslate\jihe
+#!desc=Alpenglow\Documents\MoneyWiz\Tripsy\Currency\ELSA\DailyArt\baimiao\Bloomberg\Xcurrency\FlightTracker\iTranslate\jihe
 #icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Nike.png
   
 [Script]
@@ -32,9 +32,6 @@ baimiao = type=http-response, pattern=^https?:\/\/baimiao\.uzero\.cn\/api\/.+\/(
 # Bloomberg
 Bloomberg = type=http-response, pattern=^https?:\/\/mobapi\.bloomberg\.com\/wssmobile\/v1\/user\/subscription, script-path=https://raw.githubusercontent.com/leey668/pyer/main/bloomberg.js, requires-body=true
 
-# AppRaven
-AppRaven = type=http-response, pattern=^https?:\/\/appraven\.net\/appraven\/graphql, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/AppRaven.js, requires-body=true
-
 # Xcurrency
 Xcurrency = type=http-response, pattern=^https?:\/\/(xremit\.xcurrency|explorer.tratao)\.com\/api\/client\/xtool\/vip, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jijianhuilv.js, requires-body=true
 
@@ -59,7 +56,7 @@ revenuecat = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(
 revenuecat = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Revenuecat/JS/JS-3/Revenuecat.js, timeout=60
 
 [MITM]
-hostname = %APPEND% *.pdfexpert.com, firstclass.tripsy.app, api.revenuecat.com, pool.elsanow.io, api.getdailyart.com, baimiao.uzero.cn, mobapi.bloomberg.com, appraven.net, xremit.xcurrency.com, explorer.tratao.com, buy.itunes.apple.com, api.adapty.io, api.rc-backup.com, ssl-api.itranslateapp.com
+hostname = %APPEND% *.pdfexpert.com, firstclass.tripsy.app, api.revenuecat.com, pool.elsanow.io, api.getdailyart.com, baimiao.uzero.cn, mobapi.bloomberg.com, xremit.xcurrency.com, explorer.tratao.com, buy.itunes.apple.com, api.adapty.io, api.rc-backup.com, ssl-api.itranslateapp.com
 
 
 
