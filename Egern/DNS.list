@@ -31,6 +31,8 @@ DOMAIN-SUFFIX,wqop2018.com
 DOMAIN-SUFFIX,aslk2018.com
 DOMAIN-SUFFIX,goofish.com
 DOMAIN-SUFFIX,m.goofish.com
+DOMAIN-SUFFIX,tec73.com
+DOMAIN-SUFFIX,cn.pool.ntp.org
 
 
 #10086
@@ -69,6 +71,8 @@ DOMAIN-SUFFIX,mmarket6.com
 DOMAIN-SUFFIX,monternet.com
 DOMAIN-SUFFIX,warmchina121.com
 DOMAIN-SUFFIX,zdsdp.com
+DOMAIN-SUFFIX,globalsign.com
+
 
 #10000
 DOMAIN-SUFFIX,01058511989.com
