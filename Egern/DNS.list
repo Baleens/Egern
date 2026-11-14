@@ -33,6 +33,8 @@ DOMAIN-SUFFIX,goofish.com
 DOMAIN-SUFFIX,m.goofish.com
 DOMAIN-SUFFIX,tec73.com
 DOMAIN-SUFFIX,cn.pool.ntp.org
+DOMAIN,8k.w.blocksgold.com
+DOMAIN-SUFFIX,blocksgold.com
 
 
 #10086
