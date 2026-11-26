@@ -1262,6 +1262,11 @@ DOMAIN-SUFFIX,xhscdn.com
 DOMAIN-SUFFIX,xhscdn.net
 DOMAIN-SUFFIX,xiaohongshu.com
 
+#xichuangzhu/xcz
+DOMAIN-SUFFIX,xczim.com
+DOMAIN-SUFFIX,xcz.im
+
+
 #youjia
 DOMAIN-SUFFIX,qiyoujiage.com
 
